@@ -11,7 +11,7 @@ import (
 
 var osCmd = &cobra.Command{
 	Use:     "os",
-	Aliases: []string{"hassos"},
+	Aliases: []string{"mcos"},
 	Short:   "Operating System specific for updating, info and configuration imports",
 	Long: `
 This command set is specifically designed for the Muthur Command Operating System
@@ -20,11 +20,11 @@ about your Muthur Command Operating System, but also provides command to
 upgrade the operating system and the operating system CLI. Finally,
 it provides a command to import configurations from a USB stick.`,
 	Example: `
-  ha os info
-  ha os update`,
+  mc os info
+  mc os update`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		for _, arg := range os.Args {
-			if arg == "hassos" {
+			if arg == "mcos" {
 				cmd.PrintErrf("The use of '%s' is deprecated, please use 'os' instead!\n", arg)
 			}
 		}

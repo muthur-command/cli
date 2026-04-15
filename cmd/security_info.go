@@ -15,7 +15,7 @@ var securityInfoCmd = &cobra.Command{
 This command provides general information about the Muthur Command Security backend.
 `,
 	Example: `
-  ha security info
+  mc security info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

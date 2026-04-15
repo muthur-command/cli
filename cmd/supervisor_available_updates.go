@@ -14,7 +14,7 @@ var supervisorAvailableUpdatesCmd = &cobra.Command{
 	Long: `
 This command provides you information about available updates.`,
 	Example: `
-  ha supervisor available-updates`,
+  mc supervisor available-updates`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

@@ -14,7 +14,7 @@ var authCmd = &cobra.Command{
 The authentication command allows you to manage Muthur Command user accounts.
 `,
 	Example: `
-  ha authentication reset --username "JohnDoe" --password "123SuperSecret!"
+  mc authentication reset --username "JohnDoe" --password "123SuperSecret!"
 	`,
 }
 

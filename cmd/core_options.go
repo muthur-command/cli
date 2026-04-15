@@ -17,7 +17,7 @@ var coreOptionsCmd = &cobra.Command{
 This command allows you to set configuration options for the Muthur Command Core
 instance running on your Muthur Command system.`,
 	Example: `
-  ha core options --backups-exclude-database=true`,
+  mc core options --backups-exclude-database=true`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

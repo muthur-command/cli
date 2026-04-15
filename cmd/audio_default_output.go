@@ -15,7 +15,7 @@ var audioDefaultOutputCmd = &cobra.Command{
 This command allows you to set the default output channel of the
 Muthur Command Audio on your Muthur Command system.`,
 	Example: `
-	ha audio default output --name "..."
+	mc audio default output --name "..."
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

@@ -16,8 +16,8 @@ Using this command you can upgrade or downgrade the Muthur Command Supervisor
 running on your Muthur Command  system to the latest version
 or the version specified.`,
 	Example: `
-  ha supervisor update
-  ha supervisor update --version 173`,
+  mc supervisor update
+  mc supervisor update --version 173`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

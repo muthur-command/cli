@@ -17,7 +17,7 @@ This command allows you to set configuration options for the internally
 Muthur Command Security backend.
 `,
 	Example: `
-  ha security options --force-security=True
+  mc security options --force-security=True
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

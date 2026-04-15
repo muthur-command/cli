@@ -18,8 +18,8 @@ The migration will be applied during the next system reboot. A reboot is require
 to complete the migration.
 `,
 	Example: `
-  ha docker migrate-storage-driver
-  ha docker migrate-storage-driver overlayfs
+  mc docker migrate-storage-driver
+  mc docker migrate-storage-driver overlayfs
 `,
 	ValidArgsFunction: func(cmd *cobra.Command, args []string, toComplete string) ([]string, cobra.ShellCompDirective) {
 		if len(args) != 0 {

@@ -16,7 +16,7 @@ Provides insight into the system usage stats of the Muthur Command DNS server.
 It shows you how much CPU, memory, disk & network resources it uses.
 `,
 	Example: `
-  ha dns stats
+  mc dns stats
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

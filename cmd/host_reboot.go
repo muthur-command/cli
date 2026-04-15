@@ -14,7 +14,7 @@ var hostRebootCmd = &cobra.Command{
 	Long: `
 Reboot the machine that your Muthur Command is running on.`,
 	Example: `
-  ha host reboot`,
+  mc host reboot`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

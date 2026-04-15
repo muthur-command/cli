@@ -14,7 +14,7 @@ var resolutionCheckOptionsCmd = &cobra.Command{
 	Long: `
 This command allows to apply options to an specific check managed by the system.`,
 	Example: `
-  ha resolution check options [slug]`,
+  mc resolution check options [slug]`,
 	ValidArgsFunction: resolutionCheckCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

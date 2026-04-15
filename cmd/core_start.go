@@ -15,7 +15,7 @@ var coreStartCmd = &cobra.Command{
 This command allows you to manually start the Muthur Command Core instance on
 your system. This, of course, only applies when it has been stopped.`,
 	Example: `
-  ha core start`,
+  mc core start`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

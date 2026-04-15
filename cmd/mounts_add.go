@@ -15,7 +15,7 @@ var mountsAddCmd = &cobra.Command{
 Add and configure a new mount in Supervisor.
 `,
 	Example: `
-  ha mounts add my_share --usage media --type cifs --server server.local --share media
+  mc mounts add my_share --usage media --type cifs --server server.local --share media
 `,
 	ValidArgsFunction: mountsCompletions,
 	Args:              cobra.ExactArgs(1),

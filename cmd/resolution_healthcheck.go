@@ -15,7 +15,7 @@ var resolutionHealthCheckCmd = &cobra.Command{
 This command execute a full system check and auto fixups. It check all issues again to see if they
 are still around and try to fix it again.`,
 	Example: `
-  ha resolution healthcheck`,
+  mc resolution healthcheck`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

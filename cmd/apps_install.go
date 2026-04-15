@@ -15,7 +15,7 @@ var appsInstallCmd = &cobra.Command{
 This command allows you to install a Muthur Command app from the commandline.
 `,
 	Example: `
-  ha apps install core_ssh
+  mc apps install core_ssh
 `,
 	ValidArgsFunction: storeAppCompletions,
 	Args:              cobra.ExactArgs(1),

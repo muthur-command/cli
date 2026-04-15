@@ -15,7 +15,7 @@ var coreStopCmd = &cobra.Command{
 This command allows you to manually stop the Muthur Command Core instance on
 your system.`,
 	Example: `
-  ha core stop`,
+  mc core stop`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

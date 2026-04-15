@@ -15,8 +15,8 @@ var coreUpdateCmd = &cobra.Command{
 Using this command you can upgrade or downgrade the Muthur Command Core instance
 running on your system to the latest version or the version specified.`,
 	Example: `
-  ha core update
-  ha core update --version 0.105.4`,
+  mc core update
+  mc core update --version 0.105.4`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

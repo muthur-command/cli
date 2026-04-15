@@ -14,8 +14,8 @@ var audioDefaultCmd = &cobra.Command{
 Set the default input/output audio device of your Muthur Command system.
 `,
 	Example: `
-	ha audio default input --name "..."
-	ha audio default output --name "..."
+	mc audio default input --name "..."
+	mc audio default output --name "..."
 `,
 }
 

@@ -14,7 +14,7 @@ var resolutionSuggestionApplyCmd = &cobra.Command{
 	Long: `
 This command allow to apply an suggestion reported by the System.`,
 	Example: `
-  ha resolution suggestion apply [id]`,
+  mc resolution suggestion apply [id]`,
 	ValidArgsFunction: resolutionSuggestionCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

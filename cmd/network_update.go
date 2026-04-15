@@ -15,7 +15,7 @@ var networkUpdateCmd = &cobra.Command{
 Update network interface settings of a specific adapter.
 `,
 	Example: `
-  ha network update eth0 --ipv4-method auto --ipv6-method disabled
+  mc network update eth0 --ipv4-method auto --ipv6-method disabled
 `,
 	ValidArgsFunction: networkInterfaceCompletions,
 	Args:              cobra.ExactArgs(1),

@@ -15,7 +15,7 @@ var storeRepositoriesDeleteCmd = &cobra.Command{
 Remove a repository of apps that isn't in use from the Muthur Command store.
 `,
 	Example: `
-ha store delete 94cfad5a
+mc store delete 94cfad5a
 `,
 	ValidArgsFunction: storeRepositoriesCompletions,
 	Args:              cobra.ExactArgs(1),

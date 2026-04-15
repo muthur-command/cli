@@ -12,8 +12,8 @@ var jobsCmd = &cobra.Command{
 The jobs command allows you to manage the internal Muthur Command Job Manager and
 exposing commands to view, configure and control it.`,
 	Example: `
-  ha jobs info
-  ha jobs options`,
+  mc jobs info
+  mc jobs options`,
 }
 
 func init() {

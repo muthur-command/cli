@@ -15,7 +15,7 @@ var dockerInfoCmd = &cobra.Command{
 Shows information about the local Docker backend on the host system
 `,
 	Example: `
-  ha docker info
+  mc docker info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

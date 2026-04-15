@@ -15,7 +15,7 @@ var dockerRegistriesDeleteCmd = &cobra.Command{
 Remove login for the Docker OCI registry server.
 `,
 	Example: `
-  ha docker registries delete my-docker.example.com"
+  mc docker registries delete my-docker.example.com"
 `,
 	ValidArgsFunction: dockerRegistriesDeleteCompletions,
 	Args:              cobra.ExactArgs(1),

@@ -13,7 +13,7 @@ var multicastRestartCmd = &cobra.Command{
 	Short:   "Restarts the internal Muthur Command Multicast server",
 	Long:    `Restart the internal Muthur Command Multicast server running`,
 	Example: `
-  ha multicast restart`,
+  mc multicast restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

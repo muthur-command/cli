@@ -15,7 +15,7 @@ var supervisorStatsCmd = &cobra.Command{
 Provides insight into the system usage stats of the Muthur Command Supervisor.
 It shows you how much CPU, memory, disk & network resources it uses.`,
 	Example: `
-  ha supervisor stats`,
+  mc supervisor stats`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

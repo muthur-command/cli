@@ -33,7 +33,7 @@ var rootCmd = &cobra.Command{
 	Use:   path.Base(os.Args[0]),
 	Short: "A small CLI program to control MCOS via the Supervisor",
 	Long: `
-The MCOS CLI (ha) is a small command line utility that talks to the Supervisor
+The MCOS CLI (mc) is a small command line utility that talks to the Supervisor
 HTTP API to inspect and configure your MCOS stack.`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		// set loglevel if possible
@@ -77,7 +77,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "Optional config file (default is $HOME/.homeassistant.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "Optional config file (default is $HOME/.muthurcommand.yaml)")
 	rootCmd.PersistentFlags().StringVar(&endPoint, "endpoint", "", "Endpoint for Supervisor (default is 'supervisor')")
 	rootCmd.PersistentFlags().StringVar(&logLevel, "log-level", "", "Log level (defaults to "+slog.LevelWarn.String()+")")
 	rootCmd.PersistentFlags().StringVar(&apiToken, "api-token", "", "Supervisor API token")
@@ -140,10 +140,10 @@ func initConfig() {
 			os.Exit(1)
 		}
 
-		// Search config in home directory with name ".homeassistant" (without extension).
+		// Search config in home directory with name ".muthurcommand" (without extension).
 		viper.AddConfigPath(home)
 		slog.Debug("Adding homedir to searchpath", "homedir", home)
-		viper.SetConfigName(".homeassistant")
+		viper.SetConfigName(".muthurcommand")
 	}
 
 	// If a config file is found, read it in.

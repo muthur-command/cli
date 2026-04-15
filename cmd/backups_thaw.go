@@ -15,7 +15,7 @@ var backupsThawCmd = &cobra.Command{
 End a freeze initiated by the freeze command after an external backup or snapshot
 has completed.`,
 	Example: `
-  ha backups thaw`,
+  mc backups thaw`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

@@ -16,7 +16,7 @@ Scan for Access Points on a specific wireless interface.
 This function works only on a wireless interface!
 `,
 	Example: `
-  ha network scan wlan0
+  mc network scan wlan0
 `,
 	ValidArgsFunction: networkInterfaceCompletions,
 	Args:              cobra.ExactArgs(1),

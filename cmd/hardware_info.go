@@ -15,7 +15,7 @@ var hardwareInfoCmd = &cobra.Command{
 The hardware command provides information about the hardware of your system
 that is running Muthur Command. It is useful for finding things like: available 
 serial ports.`,
-	Example:           `ha hardware info`,
+	Example:           `mc hardware info`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

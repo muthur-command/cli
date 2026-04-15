@@ -8,7 +8,7 @@ import (
 
 var coreCmd = &cobra.Command{
 	Use:     "core",
-	Aliases: []string{"homeassistant", "home-assistant", "ha"},
+	Aliases: []string{"muthurcommand", "muthur-command", "mc"},
 	Short:   "Provides control of the Muthur Command Core",
 	Long: `
 This command provides a set of subcommands to control the Muthur Command Core
@@ -20,14 +20,15 @@ Furthermore, some options can be set and allows for upgrading/downgrading
 Muthur Command Core.
 `,
 	Example: `
-  ha core check
-  ha core restart
-  ha core update
-	ha core update --version 2021.11.5`,
+  mc core check
+  mc core restart
+  mc core update
+  mc core update --version 2021.11.5`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
-		for idx, arg := range os.Args {
-			if idx != 0 && (arg == "homeassistant" || arg == "ha") {
-				cmd.PrintErrf("The use of '%s' is deprecated, please use 'core' instead!\n", arg)
+		if len(os.Args) > 1 {
+			switch os.Args[1] {
+			case "muthurcommand", "muthur-command", "mc":
+				cmd.PrintErrf("The use of '%s' is deprecated, please use 'core' instead!\n", os.Args[1])
 			}
 		}
 		rootCmd.PersistentPreRun(cmd, args)

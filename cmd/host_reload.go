@@ -16,7 +16,7 @@ This commands reload the information Muthur Command has on the hostmachine.
 If some setting are changed outside of Muthur Command, this commands updates
 the internals of Muthur Command.`,
 	Example: `
-  ha host reload`,
+  mc host reload`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

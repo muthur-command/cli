@@ -14,7 +14,7 @@ var resolutionCheckRunCmd = &cobra.Command{
 	Long: `
 This command executes an backend check immediately on the system.`,
 	Example: `
-  ha resolution check run [slug]`,
+  mc resolution check run [slug]`,
 	ValidArgsFunction: resolutionCheckCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

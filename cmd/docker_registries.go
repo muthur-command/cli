@@ -15,9 +15,9 @@ var dockerRegistriesCmd = &cobra.Command{
 Manage private OCI registry server on the local Docker host.
 `,
 	Example: `
-	ha docker registries
-	ha docker registries add my-docker.example.com
-	ha docker registries delete my-docker.example.com
+	mc docker registries
+	mc docker registries add my-docker.example.com
+	mc docker registries delete my-docker.example.com
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		slog.Debug("docker registries", "args", args)

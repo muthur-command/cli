@@ -12,8 +12,8 @@ var securityCmd = &cobra.Command{
 The security command allows you to manage the internal Muthur Command Security backend and
 exposing commands to view, configure and control it.`,
 	Example: `
-  ha security info
-  ha security options`,
+  mc security info
+  mc security options`,
 }
 
 func init() {

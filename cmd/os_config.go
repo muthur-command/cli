@@ -11,7 +11,7 @@ var osConfigCmd = &cobra.Command{
 	Long: `
 This command allows you to show or change settings of Muthur Command OS.`,
 	Example: `
-  ha os config swap`,
+  mc os config swap`,
 }
 
 func init() {

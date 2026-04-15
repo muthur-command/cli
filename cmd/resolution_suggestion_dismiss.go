@@ -14,7 +14,7 @@ var resolutionSuggestionDismissCmd = &cobra.Command{
 	Long: `
 This command allows dismissing a suggestion reported by the system.`,
 	Example: `
-  ha resolution suggestion dismiss [id]`,
+  mc resolution suggestion dismiss [id]`,
 	ValidArgsFunction: resolutionSuggestionCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

@@ -11,9 +11,9 @@ var dnsCmd = &cobra.Command{
 The dns command allows you to manage the internal Muthur Command DNS server by
 exposing commands to view, monitor, configure and control it.`,
 	Example: `
-  ha dns logs
-  ha dns info
-  ha dns update`,
+  mc dns logs
+  mc dns info
+  mc dns update`,
 }
 
 func init() {

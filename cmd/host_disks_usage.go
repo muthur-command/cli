@@ -15,7 +15,7 @@ var hostDisksUsageCmd = &cobra.Command{
 This command provides information about the default disk usage on the host system
 that Muthur Command is running on.`,
 	Example: `
-  ha host disks usage`,
+  mc host disks usage`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

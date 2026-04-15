@@ -15,7 +15,7 @@ var multicastInfoCmd = &cobra.Command{
 Shows information about the internally running Muthur Command Multicast server
 `,
 	Example: `
-  ha multicast info
+  mc multicast info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

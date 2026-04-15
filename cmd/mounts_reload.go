@@ -16,7 +16,7 @@ Unmount and remount an existing mount in Supervisor using
 the same configuration.
 `,
 	Example: `
-  ha mounts reload my_share
+  mc mounts reload my_share
 `,
 	ValidArgsFunction: mountsCompletions,
 	Args:              cobra.ExactArgs(1),

@@ -15,7 +15,7 @@ var storeRepositoriesAddCmd = &cobra.Command{
 Add new repository of apps to the Muthur Command store.
 `,
 	Example: `
-ha store add https://github.com/muthur-command/addons-example
+mc store add https://github.com/muthur-command/addons-example
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.ExactArgs(1),

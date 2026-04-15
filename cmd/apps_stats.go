@@ -16,7 +16,7 @@ Provides insight into the system usage stats of an app. It shows you
 how much CPU, memory, disk & network resources it uses.
 `,
 	Example: `
-  ha apps stats core_ssh
+  mc apps stats core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

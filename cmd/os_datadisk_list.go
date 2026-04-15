@@ -15,7 +15,7 @@ var osDataDiskListCmd = &cobra.Command{
 This command provides general information about available Harddisk for using with Muthur Command Operating System.
 `,
 	Example: `
-  ha os datadisk list
+  mc os datadisk list
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

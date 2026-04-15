@@ -16,7 +16,7 @@ var backupOptionsCmd = &cobra.Command{
 	Long: `
 This command allows you to set configuration options for backup manager.`,
 	Example: `
-  ha backups options --days-until-stale 60`,
+  mc backups options --days-until-stale 60`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

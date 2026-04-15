@@ -15,7 +15,7 @@ var backupFreezeCmd = &cobra.Command{
 This command tells Supervisor to prepare Muthur Command and apps for a backup
 or snapshot taken by external software. Caller should call thaw when done.`,
 	Example: `
-  ha backups freeze --timeout 300`,
+  mc backups freeze --timeout 300`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

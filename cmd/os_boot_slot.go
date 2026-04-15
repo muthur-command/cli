@@ -16,8 +16,8 @@ Using this command you can change the active boot slot to rollback
 an OS update without making more changes to the system.
 `,
 	Example: `
-  ha os boot-slot other
-  ha os boot-slot A
+  mc os boot-slot other
+  mc os boot-slot A
 `,
 	ValidArgsFunction: osBootSlotCompletions,
 	Args:              cobra.ExactArgs(1),

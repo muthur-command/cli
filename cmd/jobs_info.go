@@ -15,7 +15,7 @@ var jobsInfoCmd = &cobra.Command{
 This command provides general information about the Muthur Command Job backend.
 `,
 	Example: `
-  ha jobs info
+  mc jobs info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

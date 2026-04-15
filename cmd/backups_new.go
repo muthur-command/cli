@@ -15,10 +15,10 @@ var backupsNewCmd = &cobra.Command{
 This command can be used to trigger the creation of a new Muthur Command
 backup.`,
 	Example: `
-  ha backups new
-  ha backups new --app core_ssh --app core_mosquitto
-  ha backups new --folders homeassistant
-  ha backups new --uncompressed
+  mc backups new
+  mc backups new --app core_ssh --app core_mosquitto
+  mc backups new --folders muthurcommand
+  mc backups new --uncompressed
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
@@ -74,9 +74,9 @@ backup.`,
 			options["filename"] = filename
 		}
 
-		ExcludeDB, err := cmd.Flags().GetBool("homeassistant-exclude-database")
-		if err == nil && cmd.Flags().Changed("homeassistant-exclude-database") {
-			options["homeassistant_exclude_database"] = ExcludeDB
+		ExcludeDB, err := cmd.Flags().GetBool("muthurcommand-exclude-database")
+		if err == nil && cmd.Flags().Changed("muthurcommand-exclude-database") {
+			options["muthurcommand_exclude_database"] = ExcludeDB
 		}
 
 		ProgressSpinner.Start()
@@ -101,12 +101,12 @@ func init() {
 	backupsNewCmd.Flags().MarkDeprecated("addons", "use --app instead")
 	backupsNewCmd.Flags().StringArrayP("folders", "f", []string{}, "Folders to backup, triggers a partial backup")
 	backupsNewCmd.Flags().StringArrayP("location", "l", []string{}, "Where to put backup file (backup mount or local). Use multiple times for multiple locations.")
-	backupsNewCmd.Flags().Bool("homeassistant-exclude-database", false, "Exclude the Muthur Command database file from backup")
+	backupsNewCmd.Flags().Bool("muthurcommand-exclude-database", false, "Exclude the Muthur Command database file from backup")
 	backupsNewCmd.Flags().String("filename", "", "Name to use for the backup file")
 
 	backupsNewCmd.Flags().Lookup("uncompressed").NoOptDefVal = "false"
 	backupsNewCmd.Flags().Lookup("location").NoOptDefVal = ".local"
-	backupsNewCmd.Flags().Lookup("homeassistant-exclude-database").NoOptDefVal = "false"
+	backupsNewCmd.Flags().Lookup("muthurcommand-exclude-database").NoOptDefVal = "false"
 
 	backupsNewCmd.RegisterFlagCompletionFunc("name", cobra.NoFileCompletions)
 	backupsNewCmd.RegisterFlagCompletionFunc("password", cobra.NoFileCompletions)
@@ -114,7 +114,7 @@ func init() {
 	backupsNewCmd.RegisterFlagCompletionFunc("app", backupsAppsCompletions)
 	backupsNewCmd.RegisterFlagCompletionFunc("folders", backupsFoldersCompletions)
 	backupsNewCmd.RegisterFlagCompletionFunc("location", backupsLocationsCompletions)
-	backupsNewCmd.RegisterFlagCompletionFunc("homeassistant-exclude-database", boolCompletions)
+	backupsNewCmd.RegisterFlagCompletionFunc("muthurcommand-exclude-database", boolCompletions)
 	backupsNewCmd.RegisterFlagCompletionFunc("filename", cobra.NoFileCompletions)
 
 	backupsCmd.AddCommand(backupsNewCmd)

@@ -12,11 +12,11 @@ import (
 var osConfigSwapOptionsCmd = &cobra.Command{
 	Use:     "options",
 	Aliases: []string{"option", "opt", "opts", "op"},
-	Short:   "Change HAOS swap settings",
+	Short:   "Change MCOS swap settings",
 	Long: `
 This command allows you to override how the Muthur Command OS uses swap.`,
 	Example: `
-  ha os config swap options --swap-size=2G --swappiness=10`,
+  mc os config swap options --swap-size=2G --swappiness=10`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

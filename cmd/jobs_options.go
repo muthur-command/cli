@@ -16,7 +16,7 @@ This command allows you to set configuration options for the internally
 Muthur Command Job Manager.
 `,
 	Example: `
-  ha jobs options --ignore-conditions healthy
+  mc jobs options --ignore-conditions healthy
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

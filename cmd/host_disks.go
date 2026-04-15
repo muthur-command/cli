@@ -12,7 +12,7 @@ var hostDisksCmd = &cobra.Command{
 The disks command provides access to disk-related operations on the host system
 that Muthur Command is running on.`,
 	Example: `
-  ha host disks usage`,
+  mc host disks usage`,
 }
 
 func init() {

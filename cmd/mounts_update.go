@@ -15,7 +15,7 @@ var mountsUpdateCmd = &cobra.Command{
 Update or change the configuration of an existing mount in Supervisor.
 `,
 	Example: `
-  ha mounts update my_share --usage media --type cifs --server server.local --share media
+  mc mounts update my_share --usage media --type cifs --server server.local --share media
 `,
 	ValidArgsFunction: mountsCompletions,
 	Args:              cobra.ExactArgs(1),

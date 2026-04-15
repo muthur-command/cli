@@ -18,10 +18,10 @@ The store command allows you to manage add-ons by exposing
 commands for installing or updating them. It also provides functionality
 for managing stores that provide additional apps.`,
 	Example: `
-  ha store apps install core_ssh
-  ha store add https://github.com/muthur-command/addons-example
-  ha store delete 94cfad5a
-  ha store reload`,
+  mc store apps install core_ssh
+  mc store add https://github.com/muthur-command/addons-example
+  mc store delete 94cfad5a
+  mc store reload`,
 	Run: func(cmd *cobra.Command, args []string) {
 		slog.Debug("store", "args", args)
 

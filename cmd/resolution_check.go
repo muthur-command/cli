@@ -13,7 +13,7 @@ var resolutionCheckCmd = &cobra.Command{
 	Long: `
 This command allows to manage checks that are run by the system.`,
 	Example: `
-  ha resolution check options [slug]`,
+  mc resolution check options [slug]`,
 }
 
 func init() {

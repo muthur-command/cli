@@ -17,8 +17,8 @@ var storeAppsCmd = &cobra.Command{
 The store command allows you to manage Muthur Command apps by exposing
 commands for installing or update them.`,
 	Example: `
-  ha store apps install core_ssh
-  ha store apps update core_ssh`,
+  mc store apps install core_ssh
+  mc store apps update core_ssh`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		for idx, arg := range os.Args {
 			if idx != 0 && (arg == "addons" || arg == "addon" || arg == "add-on" || arg == "add-ons") {

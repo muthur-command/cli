@@ -10,11 +10,11 @@ import (
 var osConfigSwapInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "info"},
-	Short:   "Show HAOS swap settings",
+	Short:   "Show MCOS swap settings",
 	Long: `
 This command allows you to see how swap is used by the Muthur Command OS.`,
 	Example: `
-  ha os config swap info`,
+  mc os config swap info`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

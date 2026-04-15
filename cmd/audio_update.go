@@ -15,8 +15,8 @@ var audioUpdateCmd = &cobra.Command{
 Using this command you can upgrade or downgrade the Muthur Command Audio
 instance running on your system to the latest version or the version specified.`,
 	Example: `
-  ha audio update
-  ha audio update --version 6`,
+  mc audio update
+  mc audio update --version 6`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

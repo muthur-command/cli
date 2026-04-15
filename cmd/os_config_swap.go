@@ -12,7 +12,7 @@ var osConfigSwapCmd = &cobra.Command{
 This command allows you to show or change current swap configuration
 of Muthur Command OS.`,
 	Example: `
-  ha os config swap info`,
+  mc os config swap info`,
 }
 
 func init() {

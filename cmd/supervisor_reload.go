@@ -15,7 +15,7 @@ var supervisorReloadCmd = &cobra.Command{
 Reloading the Muthur Command Supervisor, triggers the Supervisor to regather
 all data it currently has, including checking for updates.`,
 	Example: `
-  ha supervisor reload`,
+  mc supervisor reload`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

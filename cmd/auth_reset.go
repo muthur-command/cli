@@ -72,8 +72,8 @@ Please note, this command is limited due to security reasons, and will
 only work on some locations. For example, the Operating System CLI.
 `,
 	Example: `
-  ha authentication reset --username "JohnDoe" --password "123SuperSecret!"
-  ha authentication reset --interactive
+  mc authentication reset --username "JohnDoe" --password "123SuperSecret!"
+  mc authentication reset --interactive
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

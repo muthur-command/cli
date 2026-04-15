@@ -13,7 +13,7 @@ var dnsRestartCmd = &cobra.Command{
 	Short:   "Restarts the internal Muthur Command DNS server",
 	Long:    `Restart the internal Muthur Command DNS server running`,
 	Example: `
-  ha dns restart`,
+  mc dns restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

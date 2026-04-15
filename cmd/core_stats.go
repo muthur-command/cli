@@ -15,7 +15,7 @@ var coreStatsCmd = &cobra.Command{
 Provides insight into the system usage stats of Muthur Command Core.
 It shows you how much CPU, memory, disk & network resources it uses.`,
 	Example: `
-  ha core stats`,
+  mc core stats`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

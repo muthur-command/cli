@@ -15,7 +15,7 @@ var cliInfoCmd = &cobra.Command{
 Shows information about the internally running Muthur Command CLI backend
 `,
 	Example: `
-  ha cli info
+  mc cli info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

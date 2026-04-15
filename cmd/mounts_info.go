@@ -15,7 +15,7 @@ var mountsInfoCmd = &cobra.Command{
 Shows information about the currently configured mounts in Supervisor
 `,
 	Example: `
-  ha mounts info
+  mc mounts info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

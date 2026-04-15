@@ -16,9 +16,9 @@ It manages your Muthur Command Core, Operating System, and all the apps.
 It even manages itself! This series of command give you control over the
 Muthur Command Supervisor.`,
 	Example: `
-  ha supervisor reload
-  ha supervisor update
-  ha supervisor logs`,
+  mc supervisor reload
+  mc supervisor update
+  mc supervisor logs`,
 }
 
 func init() {

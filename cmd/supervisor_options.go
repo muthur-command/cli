@@ -16,7 +16,7 @@ var supervisorOptionsCmd = &cobra.Command{
 This command allows you to set configuration options for on the Muthur Command
 Supervisor running on your Muthur Command system.`,
 	Example: `
-  ha supervisor options --channel beta`,
+  mc supervisor options --channel beta`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

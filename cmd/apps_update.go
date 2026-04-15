@@ -16,7 +16,7 @@ This command can upgrade a Muthur Command app to its latest version.
 It is currently not possible to upgrade/downgrade to a specific version.
 `,
 	Example: `
-  ha apps update core_ssh
+  mc apps update core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

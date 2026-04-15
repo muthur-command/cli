@@ -17,8 +17,8 @@ var appsChangelogCmd = &cobra.Command{
 This command shows the changelog of an app. It gives you what has been
 changed in the latest version and tell you about possible breaking changes.`,
 	Example: `
-ha apps changelog core_ssh
-ha apps changelog core_mosquitto`,
+mc apps changelog core_ssh
+mc apps changelog core_mosquitto`,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

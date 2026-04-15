@@ -17,7 +17,7 @@ var mountsOptionsCmd = &cobra.Command{
 Change value for options of mount manager in Supervisor.
 `,
 	Example: `
-  ha mounts options --default-backup-mount my_share
+  mc mounts options --default-backup-mount my_share
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

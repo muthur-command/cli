@@ -17,7 +17,7 @@ Please note, this command is limited due to security reasons, and will
 only work on some locations. For example, the Operating System CLI.
 `,
 	Example: `
-  ha authentication list
+  mc authentication list
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

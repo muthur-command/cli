@@ -15,7 +15,7 @@ var observerInfoCmd = &cobra.Command{
 Shows information about the internally running Muthur Command observer
 `,
 	Example: `
-  ha observer info
+  mc observer info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

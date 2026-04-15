@@ -17,7 +17,7 @@ The information provide can be useful for sharing when you are encountering
 issues or when reporting one on GitHub.
 	`,
 	Example: `
-  ha info
+  mc info
 	`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

@@ -14,7 +14,7 @@ var resolutionIssueSuggestionsCmd = &cobra.Command{
 	Long: `
 This command returns suggestions which resolve an issue when applied.`,
 	Example: `
-  ha resolution issue suggestions [id]`,
+  mc resolution issue suggestions [id]`,
 	ValidArgsFunction: resolutionIssueCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

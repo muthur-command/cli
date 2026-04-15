@@ -13,7 +13,7 @@ var audioRestartCmd = &cobra.Command{
 	Short:   "Restarts the internal Muthur Command Audio",
 	Long:    `Restart the internal Muthur Command Audio`,
 	Example: `
-  ha audio restart`,
+  mc audio restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

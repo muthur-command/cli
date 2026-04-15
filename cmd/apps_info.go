@@ -16,8 +16,8 @@ This command can provide information on all available apps or, if a slug
 is provided, information about a specific app.
 `,
 	Example: `
-  ha apps info
-  ha apps info core_ssh
+  mc apps info
+  mc apps info core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.MaximumNArgs(1),

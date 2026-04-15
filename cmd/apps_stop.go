@@ -15,7 +15,7 @@ var appsStopCmd = &cobra.Command{
 This command allows you to manually stop a Muthur Command app
 `,
 	Example: `
-  ha apps stop core_ssh
+  mc apps stop core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

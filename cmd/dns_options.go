@@ -16,7 +16,7 @@ This command allows you to set configuration options for the internally
 running Muthur Command DNS server.
 `,
 	Example: `
-  ha dns options --servers dns://8.8.8.8 --servers dns://1.1.1.1
+  mc dns options --servers dns://8.8.8.8 --servers dns://1.1.1.1
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

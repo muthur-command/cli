@@ -15,7 +15,7 @@ var hostInfoCmd = &cobra.Command{
 This command provides information on the host system Muthur Command is
 running on`,
 	Example: `
-  ha host info`,
+  mc host info`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

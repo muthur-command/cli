@@ -16,7 +16,7 @@ If a backup has been manually placed inside the backup folder, or has been
 removed manually, this command can trigger Muthur Command to re-read the files
 on disk`,
 	Example: `
-  ha backups reload`,
+  mc backups reload`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

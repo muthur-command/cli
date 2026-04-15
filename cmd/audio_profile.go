@@ -14,7 +14,7 @@ var audioProfileCmd = &cobra.Command{
 	Long: `
 This command allows you to set the audio profile on a audio card.`,
 	Example: `
-	ha audio profile --card "..." --name "..."
+	mc audio profile --card "..." --name "..."
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

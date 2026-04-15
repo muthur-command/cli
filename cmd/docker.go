@@ -12,9 +12,9 @@ var dockerCmd = &cobra.Command{
 The docker command provides command-line tools to control the host docker that
 Muthur Command is running on. It allows you to do things like use private OCI registries.`,
 	Example: `
-  ha docker info
-  ha docker options
-  ha docker registries`,
+  mc docker info
+  mc docker options
+  mc docker registries`,
 }
 
 func init() {

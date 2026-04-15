@@ -13,8 +13,8 @@ This command set is specifically designed for the Muthur Command Operating Syste
 and only works on those systems. It provides an interface to get information
 or migrating the data partition of the system to a different harddrive.`,
 	Example: `
-  ha os datadisk list
-  ha os datadisk move /dev/sda1`,
+  mc os datadisk list
+  mc os datadisk move /dev/sda1`,
 }
 
 func init() {

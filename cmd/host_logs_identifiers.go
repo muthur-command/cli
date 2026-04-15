@@ -15,7 +15,7 @@ var hostLogsIdentifiersCmd = &cobra.Command{
 Show all values that can be used with the identifier arg to find logs.
 `,
 	Example: `
-  ha host logs identifiers
+  mc host logs identifiers
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

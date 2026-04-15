@@ -17,7 +17,7 @@ Allows you to look at the systemd journal on the host to see logs
 across services and boots.
 `,
 	Example: `
-  ha host logs
+  mc host logs
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

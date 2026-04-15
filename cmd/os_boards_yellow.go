@@ -12,10 +12,10 @@ var osBoardsYellowCmd = &cobra.Command{
 	Aliases: []string{"yell"},
 	Short:   "See or change settings of the current Yellow board",
 	Long: `
-This command allows you to see or change settings of the Yellow board that Home
-Assistant is running on.`,
+This command allows you to see or change settings of the Yellow board that Muthur
+Command is running on.`,
 	Example: `
-  ha os boards yellow`,
+  mc os boards yellow`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

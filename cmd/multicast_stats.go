@@ -16,7 +16,7 @@ Provides insight into the system usage stats of the Muthur Command Multicast ser
 It shows you how much CPU, memory, disk & network resources it uses.
 `,
 	Example: `
-  ha multicast stats
+  mc multicast stats
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

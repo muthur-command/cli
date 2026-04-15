@@ -11,8 +11,8 @@ var cliCmd = &cobra.Command{
 The cli command allows you to manage the internal Muthur Command CLI backend by
 exposing commands to view, monitor, configure and control it.`,
 	Example: `
-  ha cli info
-  ha cli update`,
+  mc cli info
+  mc cli update`,
 }
 
 func init() {

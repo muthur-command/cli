@@ -15,7 +15,7 @@ var osInfoCmd = &cobra.Command{
 This command provides general information about the running Muthur Command Operating System.
 `,
 	Example: `
-  ha os info
+  mc os info
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

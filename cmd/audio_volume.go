@@ -15,10 +15,10 @@ var audioVolumeCmd = &cobra.Command{
 Control the volume of your audio devices.
 `,
 	Example: `
-	ha audio volume input --index 1 --mute
-	ha audio volume input --index 2 --volume 75
-	ha audio volume output --index 3 --unmute
-	ha audio volume output --index 4 --volume 75 --application
+	mc audio volume input --index 1 --mute
+	mc audio volume input --index 2 --volume 75
+	mc audio volume output --index 3 --unmute
+	mc audio volume output --index 4 --volume 75 --application
 `,
 }
 

@@ -16,7 +16,7 @@ Using this command you can upgrade or downgrade the internal Muthur Command
 CLI backend, to the latest version or the version specified.
 `,
 	Example: `
-  ha cli update --version 5
+  mc cli update --version 5
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

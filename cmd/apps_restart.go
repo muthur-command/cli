@@ -15,7 +15,7 @@ var appsRestartCmd = &cobra.Command{
 Restart a Muthur Command app
 `,
 	Example: `
-  ha apps restart core_ssh
+  mc apps restart core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

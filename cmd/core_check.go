@@ -17,7 +17,7 @@ Muthur Command Core configuration. This is helpful when you've made changes and
 want to make sure the configuration is right, before restarting
 Muthur Command Core.`,
 	Example: `
-  ha core check`,
+  mc core check`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

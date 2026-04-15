@@ -14,7 +14,7 @@ var supervisorRestartCmd = &cobra.Command{
 	Long: `
 Restart the Supervisor internal, this can solve healthy issues.`,
 	Example: `
-  ha supervisor restart`,
+  mc supervisor restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

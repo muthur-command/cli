@@ -16,7 +16,7 @@ Create a new VLAN on an ethernet interface. It allows setting an initial IP conf
 This function works only on an ethernet interface!
 `,
 	Example: `
-  ha network vlan eth0 10 --ipv4-method auto --ipv6-method disabled
+  mc network vlan eth0 10 --ipv4-method auto --ipv6-method disabled
 `,
 	ValidArgsFunction: networkInterfaceCompletions,
 	Args:              cobra.ExactArgs(2),

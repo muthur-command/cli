@@ -27,7 +27,7 @@ Please note, this command is limited due to security reasons, and will
 only work on some locations. For example, the Operating System CLI.
 `,
 	Example: `
-  ha os datadisk wipe
+  mc os datadisk wipe
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

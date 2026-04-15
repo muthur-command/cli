@@ -1,4 +1,4 @@
-# MCOS CLI (`ha`)
+# MCOS CLI (`mc`)
 
 中文文档: [`README.zh-CN.md`](./README.zh-CN.md)
 
@@ -6,12 +6,12 @@ Command line interface to the **Supervisor** HTTP API for **MCOS** stacks (P0: G
 
 ## Usage
 
-- `ha help`
-- `ha <subcommand> <action> [<options>]`
+- `mc help`
+- `mc <subcommand> <action> [<options>]`
 
 Example:
 
-- `ha core info --raw-json`
+- `mc core info --raw-json`
 
 ### Global flags (summary)
 
@@ -19,7 +19,7 @@ Example:
       --api-token string   Supervisor API token
       --config string      Optional config file (default is $HOME/.muthurcommand.yaml)
       --endpoint string    Endpoint for Supervisor (default is 'supervisor')
-  -h, --help               help for ha
+  -h, --help               help for mc
       --log-level string   Log level (defaults to Warn)
       --no-progress        Disable the progress spinner
       --raw-json           Output raw JSON from the API
@@ -29,11 +29,11 @@ Environment variables use the `SUPERVISOR_` prefix (e.g. `SUPERVISOR_LOG_LEVEL`)
 
 ### Subcommands
 
-Run `ha help` for the authoritative list generated from this binary. Typical groups include **apps**, **supervisor**, **core**, **dns**, **audio**, **os**, **backups**, etc.
+Run `mc help` for the authoritative list generated from this binary. Typical groups include **apps**, **supervisor**, **core**, **dns**, **audio**, **os**, **backups**, etc.
 
 ## Installation
 
-On MCOS / Supervisor-managed hosts, the **`ha`** binary is usually shipped in the **CLI plugin** container or equivalent terminal access path. Release assets on this repo use names **`ha_amd64`** and **`ha_aarch64`** for compatibility with downstream image builds.
+On MCOS / Supervisor-managed hosts, the **`mc`** binary is usually shipped in the **CLI plugin** container or equivalent terminal access path. Release assets on this repo use names **`mc_amd64`** and **`mc_aarch64`** for compatibility with downstream image builds.
 
 ## Developing
 
@@ -50,7 +50,7 @@ go run main.go info
 ### Build
 
 ```bash
-CGO_ENABLED=0 go build -ldflags="-s -w" -o "ha"
+CGO_ENABLED=0 go build -ldflags="-s -w" -o "mc"
 ```
 
 Cross-build matrix and release asset upload: [`.github/workflows/build.yml`](.github/workflows/build.yml) on branch **`mc`**.

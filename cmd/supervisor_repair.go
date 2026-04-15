@@ -17,7 +17,7 @@ system, encounters issue or corruptions. Running this command,
 the Muthur Command Supervisor will try to resolve these.
 `,
 	Example: `
-  ha supervisor repair`,
+  mc supervisor repair`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

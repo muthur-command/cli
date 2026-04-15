@@ -16,7 +16,7 @@ Using this command you can upgrade or downgrade the internal Muthur Command
 observer, to the latest version or the version specified.
 `,
 	Example: `
-  ha observer update --version 5
+  mc observer update --version 5
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

@@ -15,7 +15,7 @@ var hostOptionsCmd = &cobra.Command{
 This command allows you to set configuration options on the host system that 
 your Muthur Command is running on.`,
 	Example: `
-  ha host options --hostname homeassistant.local`,
+  mc host options --hostname muthurcommand.local`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

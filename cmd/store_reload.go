@@ -18,7 +18,7 @@ information of an app. This might be helpful when you know a new version of
 an app is released, but not yet available as an upgrade in Muthur Command.
 `,
 	Example: `
-  ha store reload
+  mc store reload
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

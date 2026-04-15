@@ -15,7 +15,7 @@ var availableUpdatesCmd = &cobra.Command{
 This command provides information about the currently pending updates on the system.
 	`,
 	Example: `
-  ha available-updates
+  mc available-updates
 	`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

@@ -13,10 +13,10 @@ var osBoardsGreenOptionsCmd = &cobra.Command{
 	Aliases: []string{"option", "opt", "opts", "op"},
 	Short:   "Change settings of the current Green board",
 	Long: `
-This command allows you to change settings of the Green board that Home
-Assistant is running on.`,
+This command allows you to change settings of the Green board that Muthur
+Command is running on.`,
 	Example: `
-  ha os boards green options --activity-led=false`,
+  mc os boards green options --activity-led=false`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

@@ -16,8 +16,8 @@ Using this command you can upgrade or downgrade the Muthur Command
 Operating System to the latest version or the version specified.
 `,
 	Example: `
-  ha os update
-  ha os update --version 5
+  mc os update
+  mc os update --version 5
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

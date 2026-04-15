@@ -15,7 +15,7 @@ var supervisorInfoCmd = &cobra.Command{
 This command provides you a ton of information about everything the
 Supervisor currently knows.`,
 	Example: `
-  ha supervisor info`,
+  mc supervisor info`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

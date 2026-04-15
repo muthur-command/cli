@@ -11,8 +11,8 @@ var observerCmd = &cobra.Command{
 The observer command allows you to manage the internal Muthur Command observer by
 exposing commands to view, monitor, configure and control it.`,
 	Example: `
-  ha observer info
-  ha observer update`,
+  mc observer info
+  mc observer update`,
 }
 
 func init() {

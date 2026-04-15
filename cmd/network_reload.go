@@ -15,7 +15,7 @@ var networkReloadCmd = &cobra.Command{
 Reload information about the host network and interfaces.
 `,
 	Example: `
-  ha network reload
+  mc network reload
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

@@ -15,8 +15,8 @@ var mountsCmd = &cobra.Command{
 The mounts command allows you to manage mounts in Supervisor by exposing
 commands to view, mount, update or remove mounts such as network shares.`,
 	Example: `
-  ha mounts info
-  ha mounts add my_share --usage media --type cifs --server server.local --share media`,
+  mc mounts info
+  mc mounts add my_share --usage media --type cifs --server server.local --share media`,
 }
 
 func init() {

@@ -63,7 +63,7 @@ var bannerCmd = &cobra.Command{
 	Aliases: []string{"ba"},
 	Short:   "Prints the CLI Muthur Command banner along with some useful information",
 	Example: `
-  ha banner
+  mc banner
 	`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
@@ -101,7 +101,7 @@ var bannerCmd = &cobra.Command{
 			}
 
 			if !supervisorReady {
-				fmt.Println("Supervisor is taking longer than expected to start. Use 'ha supervisor logs' to check logs.")
+				fmt.Println("Supervisor is taking longer than expected to start. Use 'mc supervisor logs' to check logs.")
 				return
 			}
 		}

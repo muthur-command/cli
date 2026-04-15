@@ -19,8 +19,8 @@ However, some don't. This is usually the case for local or development version
 of apps. This command allows you to trigger a rebuild of a locally built app.
 `,
 	Example: `
-  ha apps rebuild local_my_app
-  ha apps rebuild local_my_app --force
+  mc apps rebuild local_my_app
+  mc apps rebuild local_my_app --force
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

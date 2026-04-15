@@ -14,7 +14,7 @@ var coreRestartCmd = &cobra.Command{
 	Long: `
 Restart the Muthur Command Core instance running on your system`,
 	Example: `
-  ha core restart`,
+  mc core restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

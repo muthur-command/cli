@@ -15,7 +15,7 @@ var dockerRegistriesAddCmd = &cobra.Command{
 Add new login for the Docker OCI registry server.
 `,
 	Example: `
-  ha docker registries add my-docker.example.com --username "test" --password "example"
+  mc docker registries add my-docker.example.com --username "test" --password "example"
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.ExactArgs(1),

@@ -16,7 +16,7 @@ This commands triggers an import action from a connected USB stick with
 configuration to load for the Muthur Command Operating System.
 `,
 	Example: `
-  ha os import
+  mc os import
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

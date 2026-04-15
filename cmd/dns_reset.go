@@ -11,7 +11,7 @@ var dnsResetCmd = &cobra.Command{
 	Use:               "reset",
 	Short:             "Resets the internal Muthur Command DNS server configuration",
 	Long:              `Resets the internal Muthur Command DNS server configuration.`,
-	Example:           `ha dns reset`,
+	Example:           `mc dns reset`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

@@ -18,8 +18,8 @@ jobs:
     strategy:
       matrix:
         variant:
-          - {"name": "ha_amd64", "args": "GOARCH=amd64"}
-          - {"name": "ha_aarch64", "args": "GOARCH=arm64"}
+          - {"name": "mc_amd64", "args": "GOARCH=amd64"}
+          - {"name": "mc_aarch64", "args": "GOARCH=arm64"}
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v6.0.2

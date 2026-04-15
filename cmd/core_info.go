@@ -15,7 +15,7 @@ var coreInfoCmd = &cobra.Command{
 This command provides information about the running Muthur Command Core instance
 running on your Muthur Command system.`,
 	Example: `
-  ha core info`,
+  mc core info`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

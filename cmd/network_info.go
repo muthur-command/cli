@@ -15,8 +15,8 @@ var networkInfoCmd = &cobra.Command{
 Shows information about the host network and interfaces or only from a specific interface.
 `,
 	Example: `
-  ha network info
-  ha network info eth0
+  mc network info
+  mc network info eth0
 `,
 	ValidArgsFunction: networkInterfaceCompletions,
 	Args:              cobra.MaximumNArgs(1),

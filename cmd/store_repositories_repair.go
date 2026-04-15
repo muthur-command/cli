@@ -16,7 +16,7 @@ Repair/reset a repository of apps that is missing from the store,
 showing incorrect information, or otherwise working incorrectly.
 `,
 	Example: `
-ha store repair 94cfad5a
+mc store repair 94cfad5a
 `,
 	ValidArgsFunction: storeRepositoriesCompletions,
 	Args:              cobra.ExactArgs(1),

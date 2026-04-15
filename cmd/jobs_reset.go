@@ -11,7 +11,7 @@ var jobsResetCmd = &cobra.Command{
 	Use:               "reset",
 	Short:             "Resets the internal Muthur Command Job Manager configuration",
 	Long:              `Resets the internal Muthur Command Job Manager configuration.`,
-	Example:           `ha jobs reset`,
+	Example:           `mc jobs reset`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

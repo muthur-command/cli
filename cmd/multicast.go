@@ -12,8 +12,8 @@ var multicastCmd = &cobra.Command{
 The multicast command allows you to manage the internal Muthur Command Multicast
 backend by exposing commands to view, monitor, configure and control it.`,
 	Example: `
-  ha multicast info
-  ha multicast update`,
+  mc multicast info
+  mc multicast update`,
 }
 
 func init() {

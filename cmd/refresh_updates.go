@@ -15,7 +15,7 @@ var refreshUpdatesCmd = &cobra.Command{
 This command reloads information about app repositories and fetches new version files.
 	`,
 	Example: `
-  ha refresh-updates
+  mc refresh-updates
 	`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

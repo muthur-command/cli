@@ -15,7 +15,7 @@ var appsStartCmd = &cobra.Command{
 This command allows you to manually start a stopped Muthur Command app
 `,
 	Example: `
-  ha apps start core_ssh
+  mc apps start core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var backupsFolders = []string{"addons", "media", "share", "ssl"}
+var backupsFolders = []string{"addons", "media", "share", "ssl", "muthurcommand"}
 
 var backupsCmd = &cobra.Command{
 	Use:     "backups",
@@ -19,8 +19,8 @@ var backupsCmd = &cobra.Command{
 Backups of your Muthur Command system, which you can create,
 restore, and delete using this command.`,
 	Example: `
-  ha backups
-  ha backups new`,
+  mc backups
+  mc backups new`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		for idx, arg := range os.Args {
 			if idx != 0 && (arg == "snapshots" || arg == "snapshot" || arg == "snap" || arg == "shot" || arg == "sn") {

@@ -15,7 +15,7 @@ var audioInfoCmd = &cobra.Command{
 This command provides information about the running Muthur Command Audio instance
 running on your Muthur Command system, including its devices.`,
 	Example: `
-  ha audio info`,
+  mc audio info`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

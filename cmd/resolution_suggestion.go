@@ -13,8 +13,8 @@ var resolutionSuggestionCmd = &cobra.Command{
 	Long: `
 This command allows to dismiss or apply suggestion reported by the system.`,
 	Example: `
-  ha resolution suggestion dismiss [id]
-  ha resolution suggestion apply [id]`,
+  mc resolution suggestion dismiss [id]
+  mc resolution suggestion apply [id]`,
 }
 
 func init() {

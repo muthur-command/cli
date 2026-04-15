@@ -15,7 +15,7 @@ var audioStatsCmd = &cobra.Command{
 Provides insight into the system usage stats of Muthur Command Audio.
 It shows you how much CPU, memory, disk & network resources it uses.`,
 	Example: `
-  ha audio stats`,
+  mc audio stats`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

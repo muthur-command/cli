@@ -14,9 +14,9 @@ var backupsRestoreCmd = &cobra.Command{
 When something goes wrong, this command allows you to restore a previously
 take Muthur Command backup on your system.`,
 	Example: `
-  ha backups restore c1a07617
-  ha backups restore c1a07617 --app core_ssh --app core_mosquitto
-  ha backups restore c1a07617 --folders homeassistant`,
+  mc backups restore c1a07617
+  mc backups restore c1a07617 --app core_ssh --app core_mosquitto
+  mc backups restore c1a07617 --folders muthurcommand`,
 	ValidArgsFunction: backupsCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
@@ -40,9 +40,9 @@ take Muthur Command backup on your system.`,
 			options["password"] = password
 		}
 
-		homeassistant, err := cmd.Flags().GetBool("homeassistant")
-		if err == nil && cmd.Flags().Changed("homeassistant") {
-			options["homeassistant"] = homeassistant
+		muthurcommand, err := cmd.Flags().GetBool("muthurcommand")
+		if err == nil && cmd.Flags().Changed("muthurcommand") {
+			options["muthurcommand"] = muthurcommand
 			command = "restore/partial"
 		}
 
@@ -98,7 +98,7 @@ take Muthur Command backup on your system.`,
 
 func init() {
 	backupsRestoreCmd.Flags().StringP("password", "", "", "Password")
-	backupsRestoreCmd.Flags().BoolP("homeassistant", "", true, "Restore homeassistant (default true), performs a partial restore when set to false")
+	backupsRestoreCmd.Flags().BoolP("muthurcommand", "", true, "Restore muthurcommand application data (default true); set false for partial restore without it")
 	backupsRestoreCmd.Flags().StringArrayP("app", "a", []string{}, "App to restore, performs a partial restore. Use multiple times for multiple apps.")
 	backupsRestoreCmd.Flags().StringArray("addons", []string{}, "")
 	backupsRestoreCmd.Flags().MarkHidden("addons")
@@ -109,7 +109,7 @@ func init() {
 	backupsRestoreCmd.Flags().Lookup("location").NoOptDefVal = ".local"
 
 	backupsRestoreCmd.RegisterFlagCompletionFunc("password", cobra.NoFileCompletions)
-	backupsRestoreCmd.RegisterFlagCompletionFunc("homeassistant", boolCompletions)
+	backupsRestoreCmd.RegisterFlagCompletionFunc("muthurcommand", boolCompletions)
 	backupsRestoreCmd.RegisterFlagCompletionFunc("app", backupsAppsCompletions)
 	backupsRestoreCmd.RegisterFlagCompletionFunc("folders", backupsFoldersCompletions)
 	backupsRestoreCmd.RegisterFlagCompletionFunc("location", backupsLocationsCompletions)

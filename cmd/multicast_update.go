@@ -16,7 +16,7 @@ Using this command you can upgrade or downgrade the internal Muthur Command
 Multicast server, to the latest version or the version specified.
 `,
 	Example: `
-  ha multicast update --version 5
+  mc multicast update --version 5
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

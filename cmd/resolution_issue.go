@@ -13,7 +13,7 @@ var resolutionIssueCmd = &cobra.Command{
 	Long: `
 This command allows dismissing issues reported by the system.`,
 	Example: `
-  ha resolution issue dismiss [id]`,
+  mc resolution issue dismiss [id]`,
 }
 
 func init() {

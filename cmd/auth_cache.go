@@ -15,7 +15,7 @@ var authCacheCmd = &cobra.Command{
 This command allows you to reset the internal password cache of a Muthur Command auth.
 `,
 	Example: `
-  ha authentication cache
+  mc authentication cache
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

@@ -15,7 +15,7 @@ var mountsDeleteCmd = &cobra.Command{
 Unmount and delete an existing mount from Supervisor.
 `,
 	Example: `
-  ha mounts delete my_share
+  mc mounts delete my_share
 `,
 	ValidArgsFunction: mountsCompletions,
 	Args:              cobra.ExactArgs(1),

@@ -16,7 +16,7 @@ This commands triggers an migration of the Muthur Command Operating-System
 data partition to a new harddisk. The system reboots afterwards!
 `,
 	Example: `
-  ha os datadisk move /dev/sda
+  mc os datadisk move /dev/sda
 `,
 	ValidArgsFunction: func(cmd *cobra.Command, args []string, toComplete string) ([]string, cobra.ShellCompDirective) {
 		if len(args) != 0 {

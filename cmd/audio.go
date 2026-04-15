@@ -14,7 +14,7 @@ var audioCmd = &cobra.Command{
 Control audio devices.
 `,
 	Example: `
-  ha audio info
+  mc audio info
 	`,
 }
 

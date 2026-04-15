@@ -16,7 +16,7 @@ var hostLogsBootsCmd = &cobra.Command{
 Show all values that can be used with the boot arg to find logs.
 `,
 	Example: `
-  ha host logs boots
+  mc host logs boots
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

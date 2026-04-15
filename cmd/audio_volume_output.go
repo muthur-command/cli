@@ -15,12 +15,12 @@ var audioVolumeOuputCmd = &cobra.Command{
 This command allows you to set the volume of a Muthur Command Audio
 output channel or application on your Muthur Command system.`,
 	Example: `
-	ha audio volume output --index 1 --mute
-	ha audio volume output --index 1 --unmute
-	ha audio volume output --index 1 --volume 75
-	ha audio volume output --index 1 --mute --application
-	ha audio volume output --index 1 --unmute --application
-	ha audio volume output --index 2 --volume 50 --application
+	mc audio volume output --index 1 --mute
+	mc audio volume output --index 1 --unmute
+	mc audio volume output --index 1 --volume 75
+	mc audio volume output --index 1 --mute --application
+	mc audio volume output --index 1 --unmute --application
+	mc audio volume output --index 2 --volume 50 --application
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

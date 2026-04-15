@@ -15,7 +15,7 @@ var audioReloadCmd = &cobra.Command{
 Reloading the Muthur Command Audio, triggers the to regather
 all data and devices it currently has.`,
 	Example: `
-  ha audio reload`,
+  mc audio reload`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

@@ -15,7 +15,7 @@ var hostShutdownCmd = &cobra.Command{
 Shuts down the machine that your Muthur Command is running on.
 WARNING: This is turning off the computer/device.`,
 	Example: `
-  ha host shutdown`,
+  mc host shutdown`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

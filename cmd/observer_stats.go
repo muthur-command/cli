@@ -16,7 +16,7 @@ Provides insight into the system usage stats of the Muthur Command observer.
 It shows you how much CPU, memory, disk & network resources it uses.
 `,
 	Example: `
-  ha observer stats
+  mc observer stats
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

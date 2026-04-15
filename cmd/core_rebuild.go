@@ -16,7 +16,7 @@ This command allows you to trigger a rebuild for your Muthur Command Core
 instance running on your Muthur Command system.
 Don't worry, this does not delete your config.`,
 	Example: `
-  ha core rebuild`,
+  mc core rebuild`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

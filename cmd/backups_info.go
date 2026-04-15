@@ -15,7 +15,7 @@ var backupsInfoCmd = &cobra.Command{
 When a Muthur Command backup is created, it will be available for restore.
 This command gives you information about a specific backup.`,
 	Example: `
-  ha backups info c1a07617`,
+  mc backups info c1a07617`,
 	ValidArgsFunction: backupsCompletions,
 	Args:              cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

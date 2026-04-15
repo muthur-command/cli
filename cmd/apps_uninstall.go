@@ -15,7 +15,7 @@ var appsUninstallCmd = &cobra.Command{
 This command allows you to uninstall a Muthur Command app.
 `,
 	Example: `
-  ha apps uninstall core_ssh
+  mc apps uninstall core_ssh
 `,
 	ValidArgsFunction: appsCompletions,
 	Args:              cobra.ExactArgs(1),

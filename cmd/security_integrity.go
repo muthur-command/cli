@@ -15,7 +15,7 @@ var securityIntegrityCmd = &cobra.Command{
 This command execute a full system integrity check.
 This need content trust to be enabled.`,
 	Example: `
-  ha security integrity`,
+  mc security integrity`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,
 	Run: func(cmd *cobra.Command, args []string) {

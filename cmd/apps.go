@@ -18,9 +18,9 @@ The apps command allows you to manage Muthur Command apps by exposing
 commands for installing, removing, configure and control them. It also provides
 information commands for apps.`,
 	Example: `
-  ha apps logs core_ssh
-  ha apps install core_ssh
-  ha apps start core_ssh`,
+  mc apps logs core_ssh
+  mc apps install core_ssh
+  mc apps start core_ssh`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		for idx, arg := range os.Args {
 			if idx != 0 && (arg == "addons" || arg == "addon" || arg == "add-on" || arg == "add-ons" || arg == "ad") {

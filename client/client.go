@@ -29,7 +29,7 @@ func GenericJSONErrorHandling(resp *resty.Response, err error) (*resty.Response,
 		}
 	case http.StatusInternalServerError:
 		if !resty.IsJSONType(resp.Header().Get("Content-Type")) {
-			return nil, errors.New("unknown error occurred, check supervisor logs with 'ha supervisor logs'")
+			return nil, errors.New("unknown error occurred, check supervisor logs with 'mc supervisor logs'")
 		}
 	case http.StatusUnauthorized:
 		if !resty.IsJSONType(resp.Header().Get("Content-Type")) {
