@@ -3,7 +3,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 )
 
 var resolutionCheckCmd = &cobra.Command{

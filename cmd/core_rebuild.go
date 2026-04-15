@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreRebuildCmd = &cobra.Command{
 	Use:     "rebuild",
 	Aliases: []string{"rb", "reinstall"},
-	Short:   "Rebuild the Home Assistant Core instance",
+	Short:   "Rebuild the Muthur Command Core instance",
 	Long: `
-This command allows you to trigger a rebuild for your Home Assistant Core
-instance running on your Home Assistant system.
+This command allows you to trigger a rebuild for your Muthur Command Core
+instance running on your Muthur Command system.
 Don't worry, this does not delete your config.`,
 	Example: `
   ha core rebuild`,
@@ -49,7 +49,7 @@ Don't worry, this does not delete your config.`,
 }
 
 func init() {
-	coreRebuildCmd.Flags().BoolP("safe-mode", "s", false, "Rebuild Home Assistant in safe mode")
+	coreRebuildCmd.Flags().BoolP("safe-mode", "s", false, "Rebuild Muthur Command in safe mode")
 	coreRebuildCmd.Flags().BoolP("force", "f", false, "Force rebuild during an offline db migration")
 	coreRebuildCmd.Flags().Lookup("safe-mode").NoOptDefVal = "true"
 	coreRebuildCmd.Flags().Lookup("force").NoOptDefVal = "true"

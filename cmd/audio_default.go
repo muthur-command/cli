@@ -11,7 +11,7 @@ var audioDefaultCmd = &cobra.Command{
 	Aliases: []string{"def", "de", "standard", "std"},
 	Short:   "Set default input/output audio device.",
 	Long: `
-Set the default input/output audio device of your Home Assistant system.
+Set the default input/output audio device of your Muthur Command system.
 `,
 	Example: `
 	ha audio default input --name "..."

@@ -10,7 +10,7 @@ var hostDisksCmd = &cobra.Command{
 	Short:   "Manage host disk operations",
 	Long: `
 The disks command provides access to disk-related operations on the host system
-that Home Assistant is running on.`,
+that Muthur Command is running on.`,
 	Example: `
   ha host disks usage`,
 }

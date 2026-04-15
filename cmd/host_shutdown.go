@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -12,7 +12,7 @@ var hostShutdownCmd = &cobra.Command{
 	Aliases: []string{"sh"},
 	Short:   "Shutdown the host machine",
 	Long: `
-Shuts down the machine that your Home Assistant is running on.
+Shuts down the machine that your Muthur Command is running on.
 WARNING: This is turning off the computer/device.`,
 	Example: `
   ha host shutdown`,

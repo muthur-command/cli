@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeAppsInstallCmd = &cobra.Command{
 	Use:     "install [slug]",
 	Aliases: []string{"i", "inst"},
-	Short:   "Installs a Home Assistant app",
+	Short:   "Installs a Muthur Command app",
 	Long: `
-This command allows you to install a Home Assistant app from the commandline.
+This command allows you to install a Muthur Command app from the commandline.
 `,
 	Example: `
   ha store apps install core_ssh

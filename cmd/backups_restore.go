@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var backupsRestoreCmd = &cobra.Command{
 	Use:   "restore [slug]",
-	Short: "Restores a Home Assistant backup",
+	Short: "Restores a Muthur Command backup",
 	Long: `
 When something goes wrong, this command allows you to restore a previously
-take Home Assistant backup on your system.`,
+take Muthur Command backup on your system.`,
 	Example: `
   ha backups restore c1a07617
   ha backups restore c1a07617 --app core_ssh --app core_mosquitto

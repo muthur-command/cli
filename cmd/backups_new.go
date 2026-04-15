@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var backupsNewCmd = &cobra.Command{
 	Use:     "new",
 	Aliases: []string{"create", "backup"},
-	Short:   "Create a new Home Assistant backup",
+	Short:   "Create a new Muthur Command backup",
 	Long: `
-This command can be used to trigger the creation of a new Home Assistant
+This command can be used to trigger the creation of a new Muthur Command
 backup.`,
 	Example: `
   ha backups new
@@ -101,7 +101,7 @@ func init() {
 	backupsNewCmd.Flags().MarkDeprecated("addons", "use --app instead")
 	backupsNewCmd.Flags().StringArrayP("folders", "f", []string{}, "Folders to backup, triggers a partial backup")
 	backupsNewCmd.Flags().StringArrayP("location", "l", []string{}, "Where to put backup file (backup mount or local). Use multiple times for multiple locations.")
-	backupsNewCmd.Flags().Bool("homeassistant-exclude-database", false, "Exclude the Home Assistant database file from backup")
+	backupsNewCmd.Flags().Bool("homeassistant-exclude-database", false, "Exclude the Muthur Command database file from backup")
 	backupsNewCmd.Flags().String("filename", "", "Name to use for the backup file")
 
 	backupsNewCmd.Flags().Lookup("uncompressed").NoOptDefVal = "false"

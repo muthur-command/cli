@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreRestartCmd = &cobra.Command{
 	Use:     "restart",
 	Aliases: []string{"reboot"},
-	Short:   "Restarts the Home Assistant Core",
+	Short:   "Restarts the Muthur Command Core",
 	Long: `
-Restart the Home Assistant Core instance running on your system`,
+Restart the Muthur Command Core instance running on your system`,
 	Example: `
   ha core restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,
@@ -48,7 +48,7 @@ Restart the Home Assistant Core instance running on your system`,
 }
 
 func init() {
-	coreRestartCmd.Flags().BoolP("safe-mode", "s", false, "Restart Home Assistant in safe mode")
+	coreRestartCmd.Flags().BoolP("safe-mode", "s", false, "Restart Muthur Command in safe mode")
 	coreRestartCmd.Flags().BoolP("force", "f", false, "Force restart during an offline db migration")
 	coreRestartCmd.Flags().Lookup("safe-mode").NoOptDefVal = "true"
 	coreRestartCmd.Flags().Lookup("force").NoOptDefVal = "true"

@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioVolumeOuputCmd = &cobra.Command{
 	Use:     "output",
 	Aliases: []string{"out"},
-	Short:   "Set volume of a Home Assistant Audio output channel",
+	Short:   "Set volume of a Muthur Command Audio output channel",
 	Long: `
-This command allows you to set the volume of a Home Assistant Audio
-output channel or application on your Home Assistant system.`,
+This command allows you to set the volume of a Muthur Command Audio
+output channel or application on your Muthur Command system.`,
 	Example: `
 	ha audio volume output --index 1 --mute
 	ha audio volume output --index 1 --unmute

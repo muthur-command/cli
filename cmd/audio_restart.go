@@ -3,15 +3,15 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioRestartCmd = &cobra.Command{
 	Use:     "restart",
 	Aliases: []string{"reboot"},
-	Short:   "Restarts the internal Home Assistant Audio",
-	Long:    `Restart the internal Home Assistant Audio`,
+	Short:   "Restarts the internal Muthur Command Audio",
+	Long:    `Restart the internal Muthur Command Audio`,
 	Example: `
   ha audio restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,

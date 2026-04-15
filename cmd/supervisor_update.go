@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var supervisorUpdateCmd = &cobra.Command{
 	Use:     "update",
 	Aliases: []string{"upgrade", "downgrade", "up", "down"},
-	Short:   "Updates the Home Assistant Supervisor",
+	Short:   "Updates the Muthur Command Supervisor",
 	Long: `
-Using this command you can upgrade or downgrade the Home Assistant Supervisor
-running on your Home Assistant  system to the latest version
+Using this command you can upgrade or downgrade the Muthur Command Supervisor
+running on your Muthur Command  system to the latest version
 or the version specified.`,
 	Example: `
   ha supervisor update

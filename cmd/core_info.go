@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Provides information about Home Assistant Core",
+	Short:   "Provides information about Muthur Command Core",
 	Long: `
-This command provides information about the running Home Assistant Core instance
-running on your Home Assistant system.`,
+This command provides information about the running Muthur Command Core instance
+running on your Muthur Command system.`,
 	Example: `
   ha core info`,
 	ValidArgsFunction: cobra.NoFileCompletions,

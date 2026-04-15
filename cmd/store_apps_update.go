@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeAppsUpdateCmd = &cobra.Command{
 	Use:     "update [slug]",
 	Aliases: []string{"upgrade", "up"},
-	Short:   "Upgrades a Home Assistant app to the latest version",
+	Short:   "Upgrades a Muthur Command app to the latest version",
 	Long: `
-This command can upgrade a Home Assistant app to its latest version.
+This command can upgrade a Muthur Command app to its latest version.
 It is currently not possible to upgrade/downgrade to a specific version.
 `,
 	Example: `

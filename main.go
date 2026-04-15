@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/home-assistant/cli/cmd"
+	"github.com/muthur-command/cli/cmd"
 )
 
 func main() {

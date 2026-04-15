@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var dnsUpdateCmd = &cobra.Command{
 	Use:     "update",
 	Aliases: []string{"upgrade", "downgrade", "up", "down"},
-	Short:   "Updates the internal Home Assistant DNS server",
+	Short:   "Updates the internal Muthur Command DNS server",
 	Long: `
-Using this command you can upgrade or downgrade the internal Home Assistant 
+Using this command you can upgrade or downgrade the internal Muthur Command 
 DNS server, to the latest version or the version specified.
 `,
 	Example: `

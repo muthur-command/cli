@@ -3,14 +3,14 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var supervisorRestartCmd = &cobra.Command{
 	Use:     "restart",
 	Aliases: []string{"reboot"},
-	Short:   "Restart the Home Assistant Supervisor",
+	Short:   "Restart the Muthur Command Supervisor",
 	Long: `
 Restart the Supervisor internal, this can solve healthy issues.`,
 	Example: `

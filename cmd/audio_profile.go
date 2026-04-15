@@ -3,14 +3,14 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioProfileCmd = &cobra.Command{
 	Use:     "profile",
 	Aliases: []string{"pro"},
-	Short:   "Set the Home Assistant Audio profile for a card",
+	Short:   "Set the Muthur Command Audio profile for a card",
 	Long: `
 This command allows you to set the audio profile on a audio card.`,
 	Example: `

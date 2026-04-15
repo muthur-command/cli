@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsStartCmd = &cobra.Command{
 	Use:     "start [slug]",
 	Aliases: []string{"run", "st"},
-	Short:   "Manually start a stopped Home Assistant app",
+	Short:   "Manually start a stopped Muthur Command app",
 	Long: `
-This command allows you to manually start a stopped Home Assistant app
+This command allows you to manually start a stopped Muthur Command app
 `,
 	Example: `
   ha apps start core_ssh

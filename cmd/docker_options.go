@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )
@@ -17,7 +17,7 @@ var dockerOptionsCmd = &cobra.Command{
 	Short:   "Allows you to set options on the host docker backend",
 	Long: `
 This command allows you to set configuration options for on the host
-docker backend running on your Home Assistant system.`,
+docker backend running on your Muthur Command system.`,
 	Example: `
   ha docker options --enable-ipv6=true
   ha docker options --mtu=1450`,

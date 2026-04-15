@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreStartCmd = &cobra.Command{
 	Use:     "start",
 	Aliases: []string{"run", "st"},
-	Short:   "Manually start Home Assistant Core",
+	Short:   "Manually start Muthur Command Core",
 	Long: `
-This command allows you to manually start the Home Assistant Core instance on
+This command allows you to manually start the Muthur Command Core instance on
 your system. This, of course, only applies when it has been stopped.`,
 	Example: `
   ha core start`,

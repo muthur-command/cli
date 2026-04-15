@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -13,7 +13,7 @@ var networkCmd = &cobra.Command{
 	Short:   "Network specific for updating, info and configuration imports",
 	Long: `
 The network command provides command line tools to control the host network that
-Home Assistant is running on. It allows you to do things like change the
+Muthur Command is running on. It allows you to do things like change the
 system network IP address, set connection options or join a Wi-Fi network.`,
 	Example: `
   ha network info

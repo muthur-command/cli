@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -13,7 +13,7 @@ var backupsReloadCmd = &cobra.Command{
 	Short:   "Reload the files on disk to check for new or removed backups",
 	Long: `
 If a backup has been manually placed inside the backup folder, or has been
-removed manually, this command can trigger Home Assistant to re-read the files
+removed manually, this command can trigger Muthur Command to re-read the files
 on disk`,
 	Example: `
   ha backups reload`,

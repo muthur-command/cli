@@ -3,7 +3,7 @@ package cmd
 import (
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -25,7 +25,7 @@ func init() {
 
 func addMountFlags(cmd *cobra.Command) {
 	cmd.Flags().StringP("type", "t", "cifs", "Type of mount")
-	cmd.Flags().StringP("usage", "u", "media", "Usage of mount within Home Assistant")
+	cmd.Flags().StringP("usage", "u", "media", "Usage of mount within Muthur Command")
 	cmd.Flags().StringP("server", "s", "", "IP address or hostname of network share server")
 	cmd.Flags().IntP("port", "o", 0, "Port to use if network share is exposed on non-standard port for the type")
 	cmd.Flags().StringP("share", "r", "", "Share to mount (cifs mounts only)")

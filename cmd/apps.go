@@ -5,16 +5,16 @@ import (
 	"os"
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsCmd = &cobra.Command{
 	Use:     "apps",
 	Aliases: []string{"app", "addons", "addon", "add-on", "add-ons", "ad"},
-	Short:   "Install, update, remove and configure Home Assistant apps",
+	Short:   "Install, update, remove and configure Muthur Command apps",
 	Long: `
-The apps command allows you to manage Home Assistant apps by exposing
+The apps command allows you to manage Muthur Command apps by exposing
 commands for installing, removing, configure and control them. It also provides
 information commands for apps.`,
 	Example: `

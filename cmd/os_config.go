@@ -7,9 +7,9 @@ import (
 var osConfigCmd = &cobra.Command{
 	Use:     "config",
 	Aliases: []string{"conf", "cfg"},
-	Short:   "Show or change Home Assistant OS settings",
+	Short:   "Show or change Muthur Command OS settings",
 	Long: `
-This command allows you to show or change settings of Home Assistant OS.`,
+This command allows you to show or change settings of Muthur Command OS.`,
 	Example: `
   ha os config swap`,
 }

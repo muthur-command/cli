@@ -6,23 +6,26 @@ import (
 	"strings"
 	"time"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 const haBanner = `
-       ▄██▄           _   _                                    
-     ▄██████▄        | | | | ___  _ __ ___   ___               
-   ▄████▀▀████▄      | |_| |/ _ \| '_ ` + "`" + ` _ \ / _ \              
- ▄█████    █████▄    |  _  | (_) | | | | | |  __/              
-▄██████▄  ▄██████▄   |_| |_|\___/|_| |_| |_|\___|          _   
-████████  ██▀  ▀██      / \   ___ ___(_)___| |_ __ _ _ __ | |_ 
-███▀▀███  ██   ▄██     / _ \ / __/ __| / __| __/ _` + "`" + ` | '_ \| __|
-██    ██  ▀ ▄█████    / ___ \\__ \__ \ \__ \ || (_| | | | | |_ 
-███▄▄ ▀█  ▄███████   /_/   \_\___/___/_|___/\__\__,_|_| |_|\__|
-▀█████▄   ███████▀
+███╗   ███╗██╗   ██╗████████╗██╗  ██╗██╗   ██╗██████╗ 
+████╗ ████║██║   ██║╚══██╔══╝██║  ██║██║   ██║██╔══██╗
+██╔████╔██║██║   ██║   ██║   ███████║██║   ██║██████╔╝
+██║╚██╔╝██║██║   ██║   ██║   ██╔══██║██║   ██║██╔══██╗
+██║ ╚═╝ ██║╚██████╔╝   ██║   ██║  ██║╚██████╔╝██║  ██║
+╚═╝     ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
 
-Welcome to the Home Assistant command line interface.
+ ██████╗ ██████╗ ███╗   ███╗███╗   ███╗ █████╗ ███╗   ██╗██████╗ 
+██╔════╝██╔═══██╗████╗ ████║████╗ ████║██╔══██╗████╗  ██║██╔══██╗
+██║     ██║   ██║██╔████╔██║██╔████╔██║███████║██╔██╗ ██║██║  ██║
+██║     ██║   ██║██║╚██╔╝██║██║╚██╔╝██║██╔══██║██║╚██╗██║██║  ██║
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║██████╔╝
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝
+
+Welcome to the Muthur Command command line interface.
 `
 
 func supervisorGet(section string, command string) (outdata *(map[string]any), err error) {
@@ -58,7 +61,7 @@ func getAddresses(addresses []any) string {
 var bannerCmd = &cobra.Command{
 	Use:     "banner",
 	Aliases: []string{"ba"},
-	Short:   "Prints the CLI Home Assistant banner along with some useful information",
+	Short:   "Prints the CLI Muthur Command banner along with some useful information",
 	Example: `
   ha banner
 	`,
@@ -86,7 +89,7 @@ var bannerCmd = &cobra.Command{
 				if err == nil && netinfo != nil {
 					netifaces, exist := (*netinfo)["interfaces"]
 					if exist && len(netifaces.([]any)) > 0 {
-						fmt.Println("Home Assistant Supervisor is running!")
+						fmt.Println("Muthur Command Supervisor is running!")
 						supervisorReady = true
 						break
 					}
@@ -174,9 +177,9 @@ var bannerCmd = &cobra.Command{
 
 		port, _ := (*coreinfo)["port"].(float64)
 		fmt.Printf("  %-25s %s\n", "OS Version:", (*hostinfo)["operating_system"])
-		fmt.Printf("  %-25s %s\n", "Home Assistant Core:", (*coreinfo)["version"])
+		fmt.Printf("  %-25s %s\n", "Muthur Command Core:", (*coreinfo)["version"])
 		fmt.Println()
-		fmt.Printf("  %-25s %s://%s.local:%d\n", "Home Assistant URL:", protocol, (*hostinfo)["hostname"], int(port))
+		fmt.Printf("  %-25s %s://%s.local:%d\n", "Muthur Command URL:", protocol, (*hostinfo)["hostname"], int(port))
 		fmt.Printf("  %-25s http://%s.local:%d\n", "Observer URL:", (*hostinfo)["hostname"], 4357)
 		fmt.Println("")
 		fmt.Println("System is ready! Use browser or app to configure.")

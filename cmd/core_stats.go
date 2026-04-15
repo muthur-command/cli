@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreStatsCmd = &cobra.Command{
 	Use:     "stats",
 	Aliases: []string{"status", "stat", "st"},
-	Short:   "Provides system usage stats of Home Assistant Core",
+	Short:   "Provides system usage stats of Muthur Command Core",
 	Long: `
-Provides insight into the system usage stats of Home Assistant Core.
+Provides insight into the system usage stats of Muthur Command Core.
 It shows you how much CPU, memory, disk & network resources it uses.`,
 	Example: `
   ha core stats`,

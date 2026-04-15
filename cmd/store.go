@@ -5,21 +5,21 @@ import (
 
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeCmd = &cobra.Command{
 	Use:     "store",
 	Aliases: []string{"shop", "stor"},
-	Short:   "Install and update Home Assistant apps and manage stores",
+	Short:   "Install and update add-ons and manage stores",
 	Long: `
-The store command allows you to manage Home Assistant apps by exposing
+The store command allows you to manage add-ons by exposing
 commands for installing or updating them. It also provides functionality
 for managing stores that provide additional apps.`,
 	Example: `
   ha store apps install core_ssh
-  ha store add https://github.com/home-assistant/addons-example
+  ha store add https://github.com/muthur-command/addons-example
   ha store delete 94cfad5a
   ha store reload`,
 	Run: func(cmd *cobra.Command, args []string) {

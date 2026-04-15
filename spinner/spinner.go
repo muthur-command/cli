@@ -1,7 +1,7 @@
 // Originally created by Brian Downs
 // https://github.com/briandowns/spinner
 //
-// Stripped down and modified to work better for Home Assistant CLI
+// Stripped down and modified to work better for Muthur Command CLI
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.

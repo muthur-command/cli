@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var multicastInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Shows information about the internal Home Assistant Multicast server",
+	Short:   "Shows information about the internal Muthur Command Multicast server",
 	Long: `
-Shows information about the internally running Home Assistant Multicast server
+Shows information about the internally running Muthur Command Multicast server
 `,
 	Example: `
   ha multicast info

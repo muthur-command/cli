@@ -9,7 +9,7 @@ var jobsCmd = &cobra.Command{
 	Aliases: []string{"job", "tasks", "task"},
 	Short:   "Get information and manage running jobs",
 	Long: `
-The jobs command allows you to manage the internal Home Assistant Job Manager and
+The jobs command allows you to manage the internal Muthur Command Job Manager and
 exposing commands to view, configure and control it.`,
 	Example: `
   ha jobs info

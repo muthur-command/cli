@@ -3,14 +3,14 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var jobsResetCmd = &cobra.Command{
 	Use:               "reset",
-	Short:             "Resets the internal Home Assistant Job Manager configuration",
-	Long:              `Resets the internal Home Assistant Job Manager configuration.`,
+	Short:             "Resets the internal Muthur Command Job Manager configuration",
+	Long:              `Resets the internal Muthur Command Job Manager configuration.`,
 	Example:           `ha jobs reset`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

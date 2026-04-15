@@ -9,15 +9,15 @@ import (
 var coreCmd = &cobra.Command{
 	Use:     "core",
 	Aliases: []string{"homeassistant", "home-assistant", "ha"},
-	Short:   "Provides control of the Home Assistant Core",
+	Short:   "Provides control of the Muthur Command Core",
 	Long: `
-This command provides a set of subcommands to control the Home Assistant Core
+This command provides a set of subcommands to control the Muthur Command Core
 instance running on this installation.
 
-It provides commands to control Home Assistant Core (start, stop, restart),
-but also allows you to check your Home Assistant Core configuration.
+It provides commands to control Muthur Command Core (start, stop, restart),
+but also allows you to check your Muthur Command Core configuration.
 Furthermore, some options can be set and allows for upgrading/downgrading
-Home Assistant Core.
+Muthur Command Core.
 `,
 	Example: `
   ha core check

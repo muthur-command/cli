@@ -3,14 +3,14 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var dnsResetCmd = &cobra.Command{
 	Use:               "reset",
-	Short:             "Resets the internal Home Assistant DNS server configuration",
-	Long:              `Resets the internal Home Assistant DNS server configuration.`,
+	Short:             "Resets the internal Muthur Command DNS server configuration",
+	Long:              `Resets the internal Muthur Command DNS server configuration.`,
 	Example:           `ha dns reset`,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.NoArgs,

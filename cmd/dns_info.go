@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var dnsInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Shows information about the internal Home Assistant DNS server",
+	Short:   "Shows information about the internal Muthur Command DNS server",
 	Long: `
-Shows information about the internally running Home Assistant DNS server
+Shows information about the internally running Muthur Command DNS server
 `,
 	Example: `
   ha dns info

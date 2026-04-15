@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var osDataDiskMoveCmd = &cobra.Command{
 	Use:     "move [disk]",
 	Aliases: []string{"migrate", "mov"},
-	Short:   "Migrate Home Assistant Operating-System data partition",
+	Short:   "Migrate Muthur Command Operating-System data partition",
 	Long: `
-This commands triggers an migration of the Home Assistant Operating-System
+This commands triggers an migration of the Muthur Command Operating-System
 data partition to a new harddisk. The system reboots afterwards!
 `,
 	Example: `

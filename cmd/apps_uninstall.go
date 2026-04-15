@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsUninstallCmd = &cobra.Command{
 	Use:     "uninstall [slug]",
 	Aliases: []string{"remove", "delete", "del", "rem", "un", "uninst"},
-	Short:   "Uninstalls a Home Assistant app",
+	Short:   "Uninstalls a Muthur Command app",
 	Long: `
-This command allows you to uninstall a Home Assistant app.
+This command allows you to uninstall a Muthur Command app.
 `,
 	Example: `
   ha apps uninstall core_ssh

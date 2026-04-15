@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -14,7 +14,7 @@ var securityOptionsCmd = &cobra.Command{
 	Short:   "Allow to set options for the Security backend",
 	Long: `
 This command allows you to set configuration options for the internally
-Home Assistant Security backend.
+Muthur Command Security backend.
 `,
 	Example: `
   ha security options --force-security=True

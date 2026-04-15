@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var osUpdateCmd = &cobra.Command{
 	Use:     "update",
 	Aliases: []string{"upgrade", "downgrade", "up", "down"},
-	Short:   "Updates the Home Assistant Operating System",
+	Short:   "Updates the Muthur Command Operating System",
 	Long: `
-Using this command you can upgrade or downgrade the Home Assistant 
+Using this command you can upgrade or downgrade the Muthur Command 
 Operating System to the latest version or the version specified.
 `,
 	Example: `

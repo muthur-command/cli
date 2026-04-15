@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioUpdateCmd = &cobra.Command{
 	Use:     "update",
 	Aliases: []string{"upgrade", "downgrade", "up", "down"},
-	Short:   "Updates the Home Assistant Audio",
+	Short:   "Updates the Muthur Command Audio",
 	Long: `
-Using this command you can upgrade or downgrade the Home Assistant Audio
+Using this command you can upgrade or downgrade the Muthur Command Audio
 instance running on your system to the latest version or the version specified.`,
 	Example: `
   ha audio update

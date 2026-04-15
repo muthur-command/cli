@@ -3,8 +3,10 @@ name: codespell
 on:
   push:
     branches:
-      - master
+      - mc
   pull_request:
+    branches:
+      - mc
 
 jobs:
   codespell:

@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreStopCmd = &cobra.Command{
 	Use:     "stop",
 	Aliases: []string{},
-	Short:   "Manually stop Home Assistant Core",
+	Short:   "Manually stop Muthur Command Core",
 	Long: `
-This command allows you to manually stop the Home Assistant Core instance on
+This command allows you to manually stop the Muthur Command Core instance on
 your system.`,
 	Example: `
   ha core stop`,

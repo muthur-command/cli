@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var supervisorReloadCmd = &cobra.Command{
 	Use:     "reload",
 	Aliases: []string{"refresh", "re"},
-	Short:   "Reload the Home Assistant Supervisor updating information",
+	Short:   "Reload the Muthur Command Supervisor updating information",
 	Long: `
-Reloading the Home Assistant Supervisor, triggers the Supervisor to regather
+Reloading the Muthur Command Supervisor, triggers the Supervisor to regather
 all data it currently has, including checking for updates.`,
 	Example: `
   ha supervisor reload`,

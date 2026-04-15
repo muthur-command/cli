@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -13,7 +13,7 @@ var osImportCmd = &cobra.Command{
 	Short:   "Import configurations from a USB stick",
 	Long: `
 This commands triggers an import action from a connected USB stick with
-configuration to load for the Home Assistant Operating System.
+configuration to load for the Muthur Command Operating System.
 `,
 	Example: `
   ha os import

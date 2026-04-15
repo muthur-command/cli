@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -12,9 +12,9 @@ var hostReloadCmd = &cobra.Command{
 	Aliases: []string{"update", "refresh", "re"},
 	Short:   "Reload information from the host machine",
 	Long: `
-This commands reload the information Home Assistant has on the hostmachine.
-If some setting are changed outside of Home Assistant, this commands updates
-the internals of Home Assistant.`,
+This commands reload the information Muthur Command has on the hostmachine.
+If some setting are changed outside of Muthur Command, this commands updates
+the internals of Muthur Command.`,
 	Example: `
   ha host reload`,
 	ValidArgsFunction: cobra.NoFileCompletions,

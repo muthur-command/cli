@@ -4,17 +4,17 @@ import (
 	"log/slog"
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var supervisorOptionsCmd = &cobra.Command{
 	Use:     "options",
 	Aliases: []string{"option", "opt", "opts", "op"},
-	Short:   "Allows you to set options on the Home Assistant Supervisor",
+	Short:   "Allows you to set options on the Muthur Command Supervisor",
 	Long: `
-This command allows you to set configuration options for on the Home Assistant
-Supervisor running on your Home Assistant system.`,
+This command allows you to set configuration options for on the Muthur Command
+Supervisor running on your Muthur Command system.`,
 	Example: `
   ha supervisor options --channel beta`,
 	ValidArgsFunction: cobra.NoFileCompletions,

@@ -1,4 +1,4 @@
-module github.com/home-assistant/cli
+module github.com/muthur-command/cli
 
 go 1.25.0
 

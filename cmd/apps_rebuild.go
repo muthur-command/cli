@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -12,9 +12,9 @@ var appsRebuildForce bool
 var appsRebuildCmd = &cobra.Command{
 	Use:     "rebuild [slug]",
 	Aliases: []string{"rb", "reinstall"},
-	Short:   "Rebuild a locally built Home Assistant app",
+	Short:   "Rebuild a locally built Muthur Command app",
 	Long: `
-Most apps provide pre-built images Home Assistant can download and use.
+Most apps provide pre-built images Muthur Command can download and use.
 However, some don't. This is usually the case for local or development version
 of apps. This command allows you to trigger a rebuild of a locally built app.
 `,

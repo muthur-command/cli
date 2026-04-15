@@ -3,14 +3,14 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeRepositoriesRepairCmd = &cobra.Command{
 	Use:     "repair [slug]",
 	Aliases: []string{"reset"},
-	Short:   "Repair/reset repository from Home Assistant store",
+	Short:   "Repair/reset repository from Muthur Command store",
 	Long: `
 Repair/reset a repository of apps that is missing from the store,
 showing incorrect information, or otherwise working incorrectly.

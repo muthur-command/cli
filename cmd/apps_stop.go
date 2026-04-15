@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsStopCmd = &cobra.Command{
 	Use:     "stop [slug]",
 	Aliases: []string{"halt", "shutdown", "quit"},
-	Short:   "Manually stop a running Home Assistant app",
+	Short:   "Manually stop a running Muthur Command app",
 	Long: `
-This command allows you to manually stop a Home Assistant app
+This command allows you to manually stop a Muthur Command app
 `,
 	Example: `
   ha apps stop core_ssh

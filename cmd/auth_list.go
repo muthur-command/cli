@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var authListCmd = &cobra.Command{
 	Use:     "list",
 	Aliases: []string{"ls"},
-	Short:   "List all Home Assistant users.",
+	Short:   "List all Muthur Command users.",
 	Long: `
-This command allows you to list all Home Assistant users on the system.
+This command allows you to list all Muthur Command users on the system.
 Please note, this command is limited due to security reasons, and will
 only work on some locations. For example, the Operating System CLI.
 `,

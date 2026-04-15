@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioReloadCmd = &cobra.Command{
 	Use:     "reload",
 	Aliases: []string{"refresh", "re"},
-	Short:   "Reload the Home Assistant Audio updating information",
+	Short:   "Reload the Muthur Command Audio updating information",
 	Long: `
-Reloading the Home Assistant Audio, triggers the to regather
+Reloading the Muthur Command Audio, triggers the to regather
 all data and devices it currently has.`,
 	Example: `
   ha audio reload`,

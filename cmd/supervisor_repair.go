@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -12,9 +12,9 @@ var supervisorRepairCmd = &cobra.Command{
 	Aliases: []string{"rep", "fix"},
 	Short:   "Repair Docker issue automatically using the Supervisor",
 	Long: `
-There are cases where the Docker file system running on your Home Assistant
+There are cases where the Docker file system running on your Muthur Command
 system, encounters issue or corruptions. Running this command,
-the Home Assistant Supervisor will try to resolve these.
+the Muthur Command Supervisor will try to resolve these.
 `,
 	Example: `
   ha supervisor repair`,

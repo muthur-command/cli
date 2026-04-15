@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Provides information about Home Assistant Audio devices",
+	Short:   "Provides information about Muthur Command Audio devices",
 	Long: `
-This command provides information about the running Home Assistant Audio instance
-running on your Home Assistant system, including its devices.`,
+This command provides information about the running Muthur Command Audio instance
+running on your Muthur Command system, including its devices.`,
 	Example: `
   ha audio info`,
 	ValidArgsFunction: cobra.NoFileCompletions,

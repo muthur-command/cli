@@ -3,19 +3,19 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeReloadCmd = &cobra.Command{
 	Use:     "reload",
 	Aliases: []string{"refresh", "re"},
-	Short:   "Reloads/Refreshes the Home Assistant app store",
+	Short:   "Reloads/Refreshes the Muthur Command app store",
 	Long: `
-This command allows you to force a reload/refresh of the Home Assistant app
+This command allows you to force a reload/refresh of the Muthur Command app
 store. Using this, you can force the download of the most recent version
 information of an app. This might be helpful when you know a new version of
-an app is released, but not yet available as an upgrade in Home Assistant.
+an app is released, but not yet available as an upgrade in Muthur Command.
 `,
 	Example: `
   ha store reload

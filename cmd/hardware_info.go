@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -13,7 +13,7 @@ var hardwareInfoCmd = &cobra.Command{
 	Short:   "Provides hardware information about your system",
 	Long: `
 The hardware command provides information about the hardware of your system
-that is running Home Assistant. It is useful for finding things like: available 
+that is running Muthur Command. It is useful for finding things like: available 
 serial ports.`,
 	Example:           `ha hardware info`,
 	ValidArgsFunction: cobra.NoFileCompletions,

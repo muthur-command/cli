@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var multicastStatsCmd = &cobra.Command{
 	Use:     "stats",
 	Aliases: []string{"status", "stat"},
-	Short:   "Provides system usage stats of the Home Assistant Multicast server",
+	Short:   "Provides system usage stats of the Muthur Command Multicast server",
 	Long: `
-Provides insight into the system usage stats of the Home Assistant Multicast server.
+Provides insight into the system usage stats of the Muthur Command Multicast server.
 It shows you how much CPU, memory, disk & network resources it uses.
 `,
 	Example: `

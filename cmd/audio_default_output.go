@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var audioDefaultOutputCmd = &cobra.Command{
 	Use:     "output",
 	Aliases: []string{"out"},
-	Short:   "Set the default Home Assistant Audio output channel",
+	Short:   "Set the default Muthur Command Audio output channel",
 	Long: `
 This command allows you to set the default output channel of the
-Home Assistant Audio on your Home Assistant system.`,
+Muthur Command Audio on your Muthur Command system.`,
 	Example: `
 	ha audio default output --name "..."
 `,

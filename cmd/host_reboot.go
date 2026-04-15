@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -12,7 +12,7 @@ var hostRebootCmd = &cobra.Command{
 	Aliases: []string{"restart", "rb"},
 	Short:   "Reboots the host machine",
 	Long: `
-Reboot the machine that your Home Assistant is running on.`,
+Reboot the machine that your Muthur Command is running on.`,
 	Example: `
   ha host reboot`,
 	ValidArgsFunction: cobra.NoFileCompletions,

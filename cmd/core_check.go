@@ -3,19 +3,19 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var coreCheckCmd = &cobra.Command{
 	Use:     "check",
 	Aliases: []string{"validate", "chk", "ch"},
-	Short:   "Validates your Home Assistant Core configuration",
+	Short:   "Validates your Muthur Command Core configuration",
 	Long: `
 This commands allows you to check/validate your, currently on disk stored,
-Home Assistant Core configuration. This is helpful when you've made changes and
+Muthur Command Core configuration. This is helpful when you've made changes and
 want to make sure the configuration is right, before restarting
-Home Assistant Core.`,
+Muthur Command Core.`,
 	Example: `
   ha core check`,
 	ValidArgsFunction: cobra.NoFileCompletions,

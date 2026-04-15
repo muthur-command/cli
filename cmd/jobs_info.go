@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var jobsInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Provides information about the Home Assistant Job Manager",
+	Short:   "Provides information about the Muthur Command Job Manager",
 	Long: `
-This command provides general information about the Home Assistant Job backend.
+This command provides general information about the Muthur Command Job backend.
 `,
 	Example: `
   ha jobs info

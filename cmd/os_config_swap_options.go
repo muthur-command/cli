@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"strconv"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -14,7 +14,7 @@ var osConfigSwapOptionsCmd = &cobra.Command{
 	Aliases: []string{"option", "opt", "opts", "op"},
 	Short:   "Change HAOS swap settings",
 	Long: `
-This command allows you to override how the Home Assistant OS uses swap.`,
+This command allows you to override how the Muthur Command OS uses swap.`,
 	Example: `
   ha os config swap options --swap-size=2G --swappiness=10`,
 	ValidArgsFunction: cobra.NoFileCompletions,

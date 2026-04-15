@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var observerInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Shows information about the internal Home Assistant observer",
+	Short:   "Shows information about the internal Muthur Command observer",
 	Long: `
-Shows information about the internally running Home Assistant observer
+Shows information about the internally running Muthur Command observer
 `,
 	Example: `
   ha observer info

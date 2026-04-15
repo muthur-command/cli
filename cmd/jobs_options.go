@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -13,7 +13,7 @@ var jobsOptionsCmd = &cobra.Command{
 	Short:   "Allow to set options for the Job Manager backend",
 	Long: `
 This command allows you to set configuration options for the internally
-Home Assistant Job Manager.
+Muthur Command Job Manager.
 `,
 	Example: `
   ha jobs options --ignore-conditions healthy

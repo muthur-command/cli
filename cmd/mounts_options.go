@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

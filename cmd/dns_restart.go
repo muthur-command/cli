@@ -3,15 +3,15 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var dnsRestartCmd = &cobra.Command{
 	Use:     "restart",
 	Aliases: []string{"reboot"},
-	Short:   "Restarts the internal Home Assistant DNS server",
-	Long:    `Restart the internal Home Assistant DNS server running`,
+	Short:   "Restarts the internal Muthur Command DNS server",
+	Long:    `Restart the internal Muthur Command DNS server running`,
 	Example: `
   ha dns restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,

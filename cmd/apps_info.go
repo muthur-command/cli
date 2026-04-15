@@ -3,14 +3,14 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsInfoCmd = &cobra.Command{
 	Use:     "info [slug]",
 	Aliases: []string{"in", "info"},
-	Short:   "Show information about available Home Assistant apps",
+	Short:   "Show information about available Muthur Command apps",
 	Long: `
 This command can provide information on all available apps or, if a slug
 is provided, information about a specific app.

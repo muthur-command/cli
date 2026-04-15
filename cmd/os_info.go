@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var osInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Provides information about the running Home Assistant Operating System",
+	Short:   "Provides information about the running Muthur Command Operating System",
 	Long: `
-This command provides general information about the running Home Assistant Operating System.
+This command provides general information about the running Muthur Command Operating System.
 `,
 	Example: `
   ha os info

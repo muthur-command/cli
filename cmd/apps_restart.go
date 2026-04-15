@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsRestartCmd = &cobra.Command{
 	Use:     "restart [slug]",
 	Aliases: []string{"reboot"},
-	Short:   "Restarts a Home Assistant app",
+	Short:   "Restarts a Muthur Command app",
 	Long: `
-Restart a Home Assistant app
+Restart a Muthur Command app
 `,
 	Example: `
   ha apps restart core_ssh

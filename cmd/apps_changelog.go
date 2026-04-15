@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var appsChangelogCmd = &cobra.Command{
 	Use:     "changelog [slug]",
 	Aliases: []string{"cl", "ch"},
-	Short:   "Show changelog of a Home Assistant app",
+	Short:   "Show changelog of a Muthur Command app",
 	Long: `
 This command shows the changelog of an app. It gives you what has been
 changed in the latest version and tell you about possible breaking changes.`,

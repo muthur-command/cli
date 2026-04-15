@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var cliInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Shows information about the internal Home Assistant CLI backend",
+	Short:   "Shows information about the internal Muthur Command CLI backend",
 	Long: `
-Shows information about the internally running Home Assistant CLI backend
+Shows information about the internally running Muthur Command CLI backend
 `,
 	Example: `
   ha cli info

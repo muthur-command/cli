@@ -3,15 +3,15 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var multicastRestartCmd = &cobra.Command{
 	Use:     "restart",
 	Aliases: []string{"reboot"},
-	Short:   "Restarts the internal Home Assistant Multicast server",
-	Long:    `Restart the internal Home Assistant Multicast server running`,
+	Short:   "Restarts the internal Muthur Command Multicast server",
+	Long:    `Restart the internal Muthur Command Multicast server running`,
 	Example: `
   ha multicast restart`,
 	ValidArgsFunction: cobra.NoFileCompletions,

@@ -9,9 +9,9 @@ import (
 var authCmd = &cobra.Command{
 	Use:     "authentication",
 	Aliases: []string{"auth", "au"},
-	Short:   "Authentication for Home Assistant users.",
+	Short:   "Authentication for Muthur Command users.",
 	Long: `
-The authentication command allows you to manage Home Assistant user accounts.
+The authentication command allows you to manage Muthur Command user accounts.
 `,
 	Example: `
   ha authentication reset --username "JohnDoe" --password "123SuperSecret!"

@@ -33,7 +33,7 @@ const RebootTimeout = 90 * time.Second
 
 var client *resty.Client
 
-// Response is the default JSON response from the Home Assistant Supervisor
+// Response is the default JSON response from the Muthur Command Supervisor
 type Response struct {
 	Result  string         `json:"result"`
 	Message string         `json:"message,omitempty"`

@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var securityInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "inf"},
-	Short:   "Provides information about the Home Assistant Security backend",
+	Short:   "Provides information about the Muthur Command Security backend",
 	Long: `
-This command provides general information about the Home Assistant Security backend.
+This command provides general information about the Muthur Command Security backend.
 `,
 	Example: `
   ha security info

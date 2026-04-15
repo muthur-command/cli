@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var osDataDiskListCmd = &cobra.Command{
 	Use:     "list",
 	Aliases: []string{"in", "inf", "info", "show"},
-	Short:   "Provides information about the running Home Assistant Operating System",
+	Short:   "Provides information about the running Muthur Command Operating System",
 	Long: `
-This command provides general information about available Harddisk for using with Home Assistant Operating System.
+This command provides general information about available Harddisk for using with Muthur Command Operating System.
 `,
 	Example: `
   ha os datadisk list

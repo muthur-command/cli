@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -12,7 +12,7 @@ var osConfigSwapInfoCmd = &cobra.Command{
 	Aliases: []string{"in", "info"},
 	Short:   "Show HAOS swap settings",
 	Long: `
-This command allows you to see how swap is used by the Home Assistant OS.`,
+This command allows you to see how swap is used by the Muthur Command OS.`,
 	Example: `
   ha os config swap info`,
 	ValidArgsFunction: cobra.NoFileCompletions,

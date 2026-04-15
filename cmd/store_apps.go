@@ -5,16 +5,16 @@ import (
 	"os"
 	"strings"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeAppsCmd = &cobra.Command{
 	Use:     "apps",
 	Aliases: []string{"app", "addons", "add-on", "addon", "add-ons"},
-	Short:   "Install and update Home Assistant apps",
+	Short:   "Install and update Muthur Command apps",
 	Long: `
-The store command allows you to manage Home Assistant apps by exposing
+The store command allows you to manage Muthur Command apps by exposing
 commands for installing or update them.`,
 	Example: `
   ha store apps install core_ssh

@@ -3,16 +3,16 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var authCacheCmd = &cobra.Command{
 	Use:     "cache",
 	Aliases: []string{"data", "ca"},
-	Short:   "Reset the auth cache of Home Assistant on Supervisor.",
+	Short:   "Reset the auth cache of Muthur Command on Supervisor.",
 	Long: `
-This command allows you to reset the internal password cache of a Home Assistant auth.
+This command allows you to reset the internal password cache of a Muthur Command auth.
 `,
 	Example: `
   ha authentication cache

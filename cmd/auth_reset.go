@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -65,9 +65,9 @@ func listUsers(users []User) {
 var authResetCmd = &cobra.Command{
 	Use:     "reset",
 	Aliases: []string{"rst", "change"},
-	Short:   "Reset the password of a Home Assistant user.",
+	Short:   "Reset the password of a Muthur Command user.",
 	Long: `
-This command allows you to change a password of a Home Assistant user.
+This command allows you to change a password of a Muthur Command user.
 Please note, this command is limited due to security reasons, and will
 only work on some locations. For example, the Operating System CLI.
 `,

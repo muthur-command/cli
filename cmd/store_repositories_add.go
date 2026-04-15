@@ -3,19 +3,19 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var storeRepositoriesAddCmd = &cobra.Command{
 	Use:     "add [repository]",
 	Aliases: []string{"set", "new"},
-	Short:   "Add new repository to Home Assistant store",
+	Short:   "Add new repository to Muthur Command store",
 	Long: `
-Add new repository of apps to the Home Assistant store.
+Add new repository of apps to the Muthur Command store.
 `,
 	Example: `
-ha store add https://github.com/home-assistant/addons-example
+ha store add https://github.com/muthur-command/addons-example
 `,
 	ValidArgsFunction: cobra.NoFileCompletions,
 	Args:              cobra.ExactArgs(1),

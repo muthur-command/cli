@@ -3,17 +3,17 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
 var dnsOptionsCmd = &cobra.Command{
 	Use:     "options",
 	Aliases: []string{"option", "opt", "opts", "op"},
-	Short:   "Allow to set options for the internal Home Assistant DNS server",
+	Short:   "Allow to set options for the internal Muthur Command DNS server",
 	Long: `
 This command allows you to set configuration options for the internally
-running Home Assistant DNS server.
+running Muthur Command DNS server.
 `,
 	Example: `
   ha dns options --servers dns://8.8.8.8 --servers dns://1.1.1.1

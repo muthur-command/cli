@@ -3,7 +3,7 @@ package cmd
 import (
 	"log/slog"
 
-	helper "github.com/home-assistant/cli/client"
+	helper "github.com/muthur-command/cli/client"
 	"github.com/spf13/cobra"
 )
 
@@ -13,7 +13,7 @@ var hostOptionsCmd = &cobra.Command{
 	Short:   "Allow to set options on host system",
 	Long: `
 This command allows you to set configuration options on the host system that 
-your Home Assistant is running on.`,
+your Muthur Command is running on.`,
 	Example: `
   ha host options --hostname homeassistant.local`,
 	ValidArgsFunction: cobra.NoFileCompletions,
