@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
+	homedir "github.com/mitchellh/go-homedir"
 	helper "github.com/muthur-command/cli/client"
 	"github.com/muthur-command/cli/spinner"
-	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"golang.org/x/term"
