@@ -10,7 +10,7 @@ import (
 var osConfigSwapInfoCmd = &cobra.Command{
 	Use:     "info",
 	Aliases: []string{"in", "info"},
-	Short:   "Show MCOS swap settings",
+	Short:   "Show Muthur Command OS swap settings",
 	Long: `
 This command allows you to see how swap is used by the Muthur Command OS.`,
 	Example: `

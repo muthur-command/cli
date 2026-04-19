@@ -12,7 +12,7 @@ import (
 var osConfigSwapOptionsCmd = &cobra.Command{
 	Use:     "options",
 	Aliases: []string{"option", "opt", "opts", "op"},
-	Short:   "Change MCOS swap settings",
+	Short:   "Change Muthur Command OS swap settings",
 	Long: `
 This command allows you to override how the Muthur Command OS uses swap.`,
 	Example: `

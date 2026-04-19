@@ -1,6 +1,4 @@
 template: |
-  **MCOS** CLI (`mc`), module **`github.com/muthur-command/cli`**. See **README.md**.
-
   ## What's Changed
 
   $CHANGES

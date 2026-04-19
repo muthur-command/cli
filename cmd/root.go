@@ -31,10 +31,10 @@ var ProgressSpinner = spinner.New(spinner.CharSets[0], 125*time.Millisecond)
 
 var rootCmd = &cobra.Command{
 	Use:   path.Base(os.Args[0]),
-	Short: "A small CLI program to control MCOS via the Supervisor",
+	Short: "A small CLI program to control Muthur Command OS via the Supervisor",
 	Long: `
-The MCOS CLI (mc) is a small command line utility that talks to the Supervisor
-HTTP API to inspect and configure your MCOS stack.`,
+The Muthur Command CLI (mc) is a small command line utility that talks to the Supervisor
+HTTP API to inspect and configure your Muthur Command OS stack.`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		// set loglevel if possible
 		var level slog.Level
