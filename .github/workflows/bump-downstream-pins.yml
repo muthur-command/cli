@@ -1,0 +1,100 @@
+# After a cli GitHub Release, open PRs in repos that pin CLI_VERSION.
+# Requires org/repo secret CLI_DOWNSTREAM_BUMP_TOKEN (PAT or GitHub App token)
+# with contents:write on plugin-cli and addons.
+#
+# Renovate (.github/renovate.json in those repos) is a backup on a 12h schedule.
+
+name: Bump downstream cli pins
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag (e.g. 2026.06.0)
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo:
+          - plugin-cli
+          - addons
+    steps:
+      - name: Check downstream bump token
+        id: token
+        env:
+          CLI_DOWNSTREAM_BUMP_TOKEN: ${{ secrets.CLI_DOWNSTREAM_BUMP_TOKEN }}
+        run: |
+          if [[ -z "${CLI_DOWNSTREAM_BUMP_TOKEN}" ]]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::CLI_DOWNSTREAM_BUMP_TOKEN is not set. Skipping downstream PRs for ${{ matrix.repo }}."
+            echo "Configure a PAT with contents:write on plugin-cli and addons."
+            echo "Renovate in those repos will still open PRs on its schedule if the Renovate app is enabled."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Normalize release version
+        if: steps.token.outputs.skip != 'true'
+        id: version
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            tag="${{ inputs.tag }}"
+          else
+            tag="${{ github.event.release.tag_name }}"
+          fi
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          echo "pin=${tag#mc_}" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout cli (scripts)
+        if: steps.token.outputs.skip != 'true'
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Checkout ${{ matrix.repo }}
+        if: steps.token.outputs.skip != 'true'
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          repository: muthur-command/${{ matrix.repo }}
+          ref: mc
+          token: ${{ secrets.CLI_DOWNSTREAM_BUMP_TOKEN }}
+          path: consumer
+          persist-credentials: false
+
+      - name: Apply cli pin bump
+        if: steps.token.outputs.skip != 'true'
+        run: |
+          chmod +x ./scripts/bump-downstream-cli-pin.sh
+          ./scripts/bump-downstream-cli-pin.sh \
+            "${{ matrix.repo }}" \
+            "${{ github.workspace }}/consumer" \
+            "${{ steps.version.outputs.tag }}"
+
+      - name: Create pull request
+        if: steps.token.outputs.skip != 'true'
+        uses: peter-evans/create-pull-request@2f38cd26bfebe301a5ee90bdd6550a69dc3ef23f # v7.0.4
+        with:
+          token: ${{ secrets.CLI_DOWNSTREAM_BUMP_TOKEN }}
+          path: consumer
+          base: mc
+          branch: "bump/cli-${{ steps.version.outputs.pin }}"
+          delete-branch: true
+          labels: dependencies
+          title: "chore(deps): bump cli to ${{ steps.version.outputs.pin }}"
+          commit-message: "chore(deps): bump cli to ${{ steps.version.outputs.pin }}"
+          body: |
+            Automated PR from [cli](https://github.com/muthur-command/cli) release `${{ steps.version.outputs.tag }}`.
+
+            **You still need to (manual):**
+            - Review and merge this PR
+            - For **plugin-cli**: publish a new plugin-cli release so `version` JSON updates
+            - Rebuild **addons/ssh** after merge if you ship that add-on
+
+            Also tracked by Renovate (`custom.regex` on `muthur-command/cli` releases).
